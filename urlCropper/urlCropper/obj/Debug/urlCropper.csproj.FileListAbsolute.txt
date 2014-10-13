@@ -1,0 +1,9 @@
+c:\users\_\documents\visual studio 2013\Projects\urlCropper\urlCropper\bin\Debug\urlCropper.exe.config
+c:\users\_\documents\visual studio 2013\Projects\urlCropper\urlCropper\bin\Debug\urlCropper.exe
+c:\users\_\documents\visual studio 2013\Projects\urlCropper\urlCropper\bin\Debug\urlCropper.pdb
+c:\users\_\documents\visual studio 2013\Projects\urlCropper\urlCropper\obj\Debug\urlCropper.Form1.resources
+c:\users\_\documents\visual studio 2013\Projects\urlCropper\urlCropper\obj\Debug\urlCropper.Properties.Resources.resources
+c:\users\_\documents\visual studio 2013\Projects\urlCropper\urlCropper\obj\Debug\urlCropper.csproj.GenerateResource.Cache
+c:\users\_\documents\visual studio 2013\Projects\urlCropper\urlCropper\obj\Debug\urlCropper.exe
+c:\users\_\documents\visual studio 2013\Projects\urlCropper\urlCropper\obj\Debug\urlCropper.pdb
+C:\Users\_\Documents\Visual Studio 2013\Projects\urlCropper\urlCropper\obj\Debug\urlCropper.csprojResolveAssemblyReference.cache
