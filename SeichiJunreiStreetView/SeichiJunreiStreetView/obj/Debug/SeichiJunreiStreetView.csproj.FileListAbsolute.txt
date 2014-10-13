@@ -1,0 +1,10 @@
+c:\users\_\documents\visual studio 2013\Projects\SeichiJunreiStreetView\SeichiJunreiStreetView\obj\Debug\SeichiJunreiStreetView.csprojResolveAssemblyReference.cache
+c:\users\_\documents\visual studio 2013\Projects\SeichiJunreiStreetView\SeichiJunreiStreetView\obj\Debug\SeichiJunreiStreetView.Properties.Resources.resources
+c:\users\_\documents\visual studio 2013\Projects\SeichiJunreiStreetView\SeichiJunreiStreetView\obj\Debug\SeichiJunreiStreetView.csproj.GenerateResource.Cache
+C:\Users\_\Documents\Visual Studio 2013\Projects\SeichiJunreiStreetView\SeichiJunreiStreetView\obj\Debug\SeichiJunreiStreetView.MenuWindow.resources
+C:\Users\_\Documents\Visual Studio 2013\Projects\SeichiJunreiStreetView\SeichiJunreiStreetView\obj\Debug\SeichiJunreiStreetView.ViewMapWindow.resources
+C:\Users\_\Documents\Visual Studio 2013\Projects\SeichiJunreiStreetView\SeichiJunreiStreetView\bin\Debug\聖地巡礼.exe.config
+C:\Users\_\Documents\Visual Studio 2013\Projects\SeichiJunreiStreetView\SeichiJunreiStreetView\bin\Debug\聖地巡礼.exe
+C:\Users\_\Documents\Visual Studio 2013\Projects\SeichiJunreiStreetView\SeichiJunreiStreetView\bin\Debug\聖地巡礼.pdb
+C:\Users\_\Documents\Visual Studio 2013\Projects\SeichiJunreiStreetView\SeichiJunreiStreetView\obj\Debug\聖地巡礼.exe
+C:\Users\_\Documents\Visual Studio 2013\Projects\SeichiJunreiStreetView\SeichiJunreiStreetView\obj\Debug\聖地巡礼.pdb
