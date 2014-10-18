@@ -20,6 +20,10 @@ namespace SeichiJunreiStreetView
         int pageNumber = 0;
         static string proxy = "http://slcp.sourceforge.jp/seichiJunrei/generator.php";
 
+        member nextMember;
+
+        loadingWindow loading;
+
 
 
         /// <summary>
@@ -39,14 +43,14 @@ namespace SeichiJunreiStreetView
             labelTitle.Text = myProduct.title;
             Text = myProduct.title;
 
-            
+            /*
             member firstMember = (member)myProduct.members[0];
             navigator(webSV, webSV.Width, webSV.Height, firstMember.sv);
 
 
             navigator(webMap, webMap.Width, webMap.Height, firstMember.map);
 
-            labelPlace.Text = firstMember.place;
+            labelPlace.Text = firstMember.place; */
 
             for (int i = 0; i < myProduct.members.Count; i++)
             {
@@ -56,7 +60,10 @@ namespace SeichiJunreiStreetView
 
             lstPlaces.SelectedIndex = 0;
 
-            this.WindowState = FormWindowState.Maximized;
+            refresh();
+
+            //最大化表示
+            //this.WindowState = FormWindowState.Maximized;
         }
 
 
@@ -92,15 +99,42 @@ namespace SeichiJunreiStreetView
 
         private void refresh()
         {
+            webSV.Height = webSV.Width / 2;
             
-
+            // 場所一覧表の当該箇所をアクティブにする
             lstPlaces.SelectedIndex = pageNumber;
 
+            // 場所情報を取得する
             member myMember = (member)myProduct.members[pageNumber];
 
             navigator(webSV, webSV.Width, webSV.Height, myMember.sv);
-            navigator(webMap, webMap.Width, webMap.Height, myMember.map);
+
+
+
+            loading = new loadingWindow();
+            loading.Show();
+
+            nextMember = myMember;
+
+            timerResizeSv.Start();
         }
+
+        private void timerReloadSv_Tick(object sender, EventArgs e)
+        {
+            timerResizeSv.Stop();
+
+            webSV.Height = webSV.Width;
+
+            navigator(webMap, webMap.Width, webMap.Height, nextMember.map);
+
+            try
+            {
+                loading.Dispose();
+            }catch{
+
+            }
+        }
+
 
 
         /// <summary>
@@ -128,26 +162,7 @@ namespace SeichiJunreiStreetView
 
 
 
-        /*
-        /// <summary>
-        /// myProductからtitleでmemberを検索
-        /// </summary>
-        /// <param name="title"></param>
-        /// <returns></returns>
-        private member place2member(string title)
-        {
-            for (int i = 0; i < myProduct.members.Count; i++)
-            {
-                member myMember = (member)myProduct.members[i];
-                if (myMember.place.Equals(title))
-                {
-                    return myMember;
-                }
-            }
-
-            MessageBox.Show("myProductのmemberに"+title+"が見つかりません");
-            return null;
-        } */
+        
 
         private void ViewMapWindow_Resize(object sender, EventArgs e)
         {
@@ -168,6 +183,44 @@ namespace SeichiJunreiStreetView
             Process.Start(myMember.refpage);
         }
 
+        private void btnYugami_Click(object sender, EventArgs e)
+        {
+            webSV.Height = webSV.Width / 2;
+
+            
+
+            // 場所情報を取得する
+            member myMember = (member)myProduct.members[pageNumber];
+            navigator(webSV, webSV.Width, webSV.Height, myMember.sv);
+
+
+            loading = new loadingWindow();
+            loading.Show();
+
+            timerYugamiFix.Start();
+        }
+
+        private void timerYugamiFix_Tick(object sender, EventArgs e)
+        {
+            webSV.Height = webSV.Width;
+
+            try
+            {
+                loading.Dispose();
+            }
+            catch
+            {
+
+            }
+
+            timerYugamiFix.Stop();
+        }
+
+        
+
+        
+
+        
         
     }
 }

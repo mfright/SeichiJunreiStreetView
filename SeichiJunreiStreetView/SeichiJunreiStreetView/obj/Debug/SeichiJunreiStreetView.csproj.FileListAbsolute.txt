@@ -8,3 +8,14 @@ C:\Users\_\Documents\Visual Studio 2013\Projects\SeichiJunreiStreetView\SeichiJu
 C:\Users\_\Documents\Visual Studio 2013\Projects\SeichiJunreiStreetView\SeichiJunreiStreetView\bin\Debug\聖地巡礼.pdb
 C:\Users\_\Documents\Visual Studio 2013\Projects\SeichiJunreiStreetView\SeichiJunreiStreetView\obj\Debug\聖地巡礼.exe
 C:\Users\_\Documents\Visual Studio 2013\Projects\SeichiJunreiStreetView\SeichiJunreiStreetView\obj\Debug\聖地巡礼.pdb
+C:\Users\_\Documents\GitHub\SeichiJunreiStreetView\SeichiJunreiStreetView\SeichiJunreiStreetView\bin\Debug\聖地巡礼.exe.config
+C:\Users\_\Documents\GitHub\SeichiJunreiStreetView\SeichiJunreiStreetView\SeichiJunreiStreetView\obj\Debug\聖地巡礼.exe
+C:\Users\_\Documents\GitHub\SeichiJunreiStreetView\SeichiJunreiStreetView\SeichiJunreiStreetView\obj\Debug\聖地巡礼.pdb
+C:\Users\_\Documents\GitHub\SeichiJunreiStreetView\SeichiJunreiStreetView\SeichiJunreiStreetView\bin\Debug\聖地巡礼.exe
+C:\Users\_\Documents\GitHub\SeichiJunreiStreetView\SeichiJunreiStreetView\SeichiJunreiStreetView\bin\Debug\聖地巡礼.pdb
+C:\Users\_\Documents\GitHub\SeichiJunreiStreetView\SeichiJunreiStreetView\SeichiJunreiStreetView\obj\Debug\SeichiJunreiStreetView.csprojResolveAssemblyReference.cache
+C:\Users\_\Documents\GitHub\SeichiJunreiStreetView\SeichiJunreiStreetView\SeichiJunreiStreetView\obj\Debug\SeichiJunreiStreetView.ViewMapWindow.resources
+C:\Users\_\Documents\GitHub\SeichiJunreiStreetView\SeichiJunreiStreetView\SeichiJunreiStreetView\obj\Debug\SeichiJunreiStreetView.MenuWindow.resources
+C:\Users\_\Documents\GitHub\SeichiJunreiStreetView\SeichiJunreiStreetView\SeichiJunreiStreetView\obj\Debug\SeichiJunreiStreetView.Properties.Resources.resources
+C:\Users\_\Documents\GitHub\SeichiJunreiStreetView\SeichiJunreiStreetView\SeichiJunreiStreetView\obj\Debug\SeichiJunreiStreetView.csproj.GenerateResource.Cache
+C:\Users\_\Documents\GitHub\SeichiJunreiStreetView\SeichiJunreiStreetView\SeichiJunreiStreetView\obj\Debug\SeichiJunreiStreetView.loadingWindow.resources

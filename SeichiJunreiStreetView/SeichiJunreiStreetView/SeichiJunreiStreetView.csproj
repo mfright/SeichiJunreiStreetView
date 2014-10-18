@@ -45,6 +45,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="loadingWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="loadingWindow.Designer.cs">
+      <DependentUpon>loadingWindow.cs</DependentUpon>
+    </Compile>
     <Compile Include="member.cs" />
     <Compile Include="product.cs" />
     <Compile Include="ViewMapWindow.cs">
@@ -61,6 +67,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="loadingWindow.resx">
+      <DependentUpon>loadingWindow.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ViewMapWindow.resx">
       <DependentUpon>ViewMapWindow.cs</DependentUpon>
     </EmbeddedResource>

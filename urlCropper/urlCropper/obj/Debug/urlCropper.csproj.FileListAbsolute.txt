@@ -7,3 +7,12 @@ c:\users\_\documents\visual studio 2013\Projects\urlCropper\urlCropper\obj\Debug
 c:\users\_\documents\visual studio 2013\Projects\urlCropper\urlCropper\obj\Debug\urlCropper.exe
 c:\users\_\documents\visual studio 2013\Projects\urlCropper\urlCropper\obj\Debug\urlCropper.pdb
 C:\Users\_\Documents\Visual Studio 2013\Projects\urlCropper\urlCropper\obj\Debug\urlCropper.csprojResolveAssemblyReference.cache
+C:\Users\_\Documents\GitHub\SeichiJunreiStreetView\urlCropper\urlCropper\bin\Debug\urlCropper.exe.config
+C:\Users\_\Documents\GitHub\SeichiJunreiStreetView\urlCropper\urlCropper\obj\Debug\urlCropper.exe
+C:\Users\_\Documents\GitHub\SeichiJunreiStreetView\urlCropper\urlCropper\obj\Debug\urlCropper.pdb
+C:\Users\_\Documents\GitHub\SeichiJunreiStreetView\urlCropper\urlCropper\bin\Debug\urlCropper.exe
+C:\Users\_\Documents\GitHub\SeichiJunreiStreetView\urlCropper\urlCropper\bin\Debug\urlCropper.pdb
+C:\Users\_\Documents\GitHub\SeichiJunreiStreetView\urlCropper\urlCropper\obj\Debug\urlCropper.csprojResolveAssemblyReference.cache
+C:\Users\_\Documents\GitHub\SeichiJunreiStreetView\urlCropper\urlCropper\obj\Debug\urlCropper.Form1.resources
+C:\Users\_\Documents\GitHub\SeichiJunreiStreetView\urlCropper\urlCropper\obj\Debug\urlCropper.Properties.Resources.resources
+C:\Users\_\Documents\GitHub\SeichiJunreiStreetView\urlCropper\urlCropper\obj\Debug\urlCropper.csproj.GenerateResource.Cache
