@@ -12,6 +12,7 @@ namespace SeichiJunreiStreetView
     public class product
     {
         public string title;   //作品のタイトル
+        public string buttonImageFileName;  //ボタンの画像ファイル名
         public ArrayList members = new ArrayList();  //memberのインスタンスを格納。 作品に登場する聖地。
     }
 }

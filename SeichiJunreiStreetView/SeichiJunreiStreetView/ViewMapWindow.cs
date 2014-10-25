@@ -39,19 +39,12 @@ namespace SeichiJunreiStreetView
 
         private void ViewMapWindow_Load(object sender, EventArgs e)
         {
-           
+            // ウィンドウタイトルに作品のタイトルを表示
             labelTitle.Text = myProduct.title;
             Text = myProduct.title;
 
-            /*
-            member firstMember = (member)myProduct.members[0];
-            navigator(webSV, webSV.Width, webSV.Height, firstMember.sv);
-
-
-            navigator(webMap, webMap.Width, webMap.Height, firstMember.map);
-
-            labelPlace.Text = firstMember.place; */
-
+            
+            // listBoxへ場所項目を追加
             for (int i = 0; i < myProduct.members.Count; i++)
             {
                 member myMember = (member)myProduct.members[i];
@@ -59,11 +52,30 @@ namespace SeichiJunreiStreetView
             }
 
             lstPlaces.SelectedIndex = 0;
-
+            
+            //SV読み込み
             refresh();
 
             //最大化表示
-            //this.WindowState = FormWindowState.Maximized;
+            this.WindowState = FormWindowState.Maximized;
+
+            //StreetViewのブラウザコンポーネントのリサイズの秒数を設定
+            timerResizeSv.Interval = settings.resize_second * 1000;
+
+            //イラストを表示
+            setPicture();
+        }
+
+        private void setPicture()
+        {
+            // このバイナリが実行されているパスを取得する
+            string path = Application.ExecutablePath;
+            int yenPosition = path.LastIndexOf('\\');
+            path = path.Substring(0, yenPosition);
+
+            path += "\\xml\\" + myProduct.buttonImageFileName;
+
+            pic.Image = System.Drawing.Image.FromFile(path);
         }
 
 
@@ -198,6 +210,8 @@ namespace SeichiJunreiStreetView
             loading.Show();
 
             timerYugamiFix.Start();
+
+            timerResizeSv.Interval += 2000;
         }
 
         private void timerYugamiFix_Tick(object sender, EventArgs e)

@@ -17,6 +17,8 @@ namespace SeichiJunreiStreetView
     {
         ArrayList allProducts = new ArrayList();    //productを格納する
 
+        
+
 
         public MenuWindow()
         {
@@ -25,8 +27,72 @@ namespace SeichiJunreiStreetView
 
         private void MenuWindow_Load(object sender, EventArgs e)
         {
+            setHeadPic();
+
+            settings.loadIni();
+
             readXmls();
+
         }
+
+        void setHeadPic()
+        {
+            // このバイナリが実行されているパスを取得する
+            string path = Application.ExecutablePath;
+            int yenPosition = path.LastIndexOf('\\');
+            path = path.Substring(0, yenPosition);
+
+            path += "\\settings\\head.png";
+
+            picHead.Image = System.Drawing.Image.FromFile(path);
+
+
+        }
+
+        //座標と画像ファイル名を指定して、ボタンを作成。
+        private void createButton(string name,int x,int y,string fileName)
+        {
+            //Buttonクラスのインスタンスを作成する
+            Button Button1 = new System.Windows.Forms.Button();
+
+            //Buttonコントロールのプロパティを設定する
+            Button1.Name = name;
+            Button1.Text = "";
+            //サイズと位置を設定する
+            Button1.Location = new Point(x, y);
+            Button1.Size = new System.Drawing.Size(400, 200);
+
+            // このバイナリが実行されているパスを取得する
+            string path = Application.ExecutablePath;
+            int yenPosition = path.LastIndexOf('\\');
+            path = path.Substring(0, yenPosition);
+
+            Button1.BackgroundImage = System.Drawing.Image.FromFile(path + "\\xml\\" + fileName);
+            Button1.BackgroundImageLayout = ImageLayout.Center;
+
+            Button1.Click += new EventHandler(menuButton_Click);
+
+            //フォームに追加する
+            this.Controls.Add(Button1);
+
+        }
+
+        // メニューのボタンが押された時
+        void menuButton_Click(object sender, EventArgs e)
+        {
+            Button senderButton = (Button)sender;
+            int index = int.Parse(senderButton.Name);
+            
+            //タイトルに合致するものをallProductsから探す
+            product targetProduct = (product)allProducts[index];
+
+            // ViewMapWindowを表示する
+            ViewMapWindow myViewMapWindow = new ViewMapWindow(targetProduct);
+            myViewMapWindow.ShowDialog();
+            myViewMapWindow.Dispose();
+        }
+
+
 
 
             
@@ -53,10 +119,17 @@ namespace SeichiJunreiStreetView
                 }
             }
 
+            // メニュー一覧へ項目を追加
             for (int k=0; k < allProducts.Count; k++)
             {
                 product myProduct = (product)allProducts[k];
-                listProducts.Items.Add(myProduct.title);
+                //listProducts.Items.Add(myProduct.title);
+
+
+                int pointY = 110 + (k / 2) * 200;
+                int pointX = 10 + (k % 2) * 400;
+
+                createButton(k + "", pointX, pointY, myProduct.buttonImageFileName);
             }
         }
 
@@ -107,6 +180,12 @@ namespace SeichiJunreiStreetView
             ptrEnd = stResult.IndexOf("</title>", ptrStart);
             myProduct.title = stResult.Substring(ptrStart, ptrEnd - ptrStart);
 
+            //ボタンの画像ファイル名を保存
+            ptrStart = stResult.IndexOf("<button>") + 8;
+            ptrEnd = stResult.IndexOf("</button>", ptrStart);
+            myProduct.buttonImageFileName = stResult.Substring(ptrStart, ptrEnd - ptrStart);
+
+
 
             //聖地のmemberらを取得する
 
@@ -120,11 +199,13 @@ namespace SeichiJunreiStreetView
                 if (ptrStart < 0)
                 {
                     break;
+                    MessageBox.Show("<member>タグが見つかりません","エラー");
                 }
 
-                ptrEnd = stResult.IndexOf("</member>",ptrStart);
+                ptrEnd = stResult.IndexOf("</member>",ptrStart);                
                 if (ptrEnd < 0)
                 {
+                    MessageBox.Show("</member>タグが見つかりません", "エラー");
                     break;
                 }
 
@@ -196,7 +277,7 @@ namespace SeichiJunreiStreetView
         
 
         
-
+        /*
         /// <summary>
         /// メニューを選択したとき
         /// </summary>
@@ -214,7 +295,7 @@ namespace SeichiJunreiStreetView
             ViewMapWindow myViewMapWindow = new ViewMapWindow(targetProduct);
             myViewMapWindow.ShowDialog();
             myViewMapWindow.Dispose();
-        }
+        } */
 
 
         /// <summary>
