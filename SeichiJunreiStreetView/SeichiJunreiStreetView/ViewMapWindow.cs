@@ -121,7 +121,7 @@ namespace SeichiJunreiStreetView
 
             navigator(webSV, webSV.Width, webSV.Height, myMember.sv);
 
-
+            labelPlace.Text = myMember.place;
 
             loading = new loadingWindow();
             loading.Show();
