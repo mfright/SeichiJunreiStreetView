@@ -28,7 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
+            this.timerClose = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
             // label1
@@ -41,6 +43,11 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Loading...";
             // 
+            // timerClose
+            // 
+            this.timerClose.Interval = 7000;
+            this.timerClose.Tick += new System.EventHandler(this.timerClose_Tick);
+            // 
             // loadingWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -52,6 +59,7 @@
             this.Name = "loadingWindow";
             this.ShowIcon = false;
             this.Text = "loading...";
+            this.Load += new System.EventHandler(this.loadingWindow_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -60,5 +68,6 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Timer timerClose;
     }
 }

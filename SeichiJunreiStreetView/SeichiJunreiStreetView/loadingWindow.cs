@@ -16,5 +16,15 @@ namespace SeichiJunreiStreetView
         {
             InitializeComponent();
         }
+
+        private void loadingWindow_Load(object sender, EventArgs e)
+        {
+            timerClose.Start();
+        }
+
+        private void timerClose_Tick(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
