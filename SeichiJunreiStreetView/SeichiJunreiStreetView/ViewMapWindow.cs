@@ -39,6 +39,9 @@ namespace SeichiJunreiStreetView
 
         private void ViewMapWindow_Load(object sender, EventArgs e)
         {
+            // ウィンドウのアイコンを変更
+            setIcon();
+
             // ウィンドウタイトルに作品のタイトルを表示
             labelTitle.Text = myProduct.title;
             Text = myProduct.title;
@@ -60,24 +63,43 @@ namespace SeichiJunreiStreetView
             this.WindowState = FormWindowState.Maximized;
 
             //StreetViewのブラウザコンポーネントのリサイズの秒数を設定
-            timerResizeSv.Interval = settings.resize_second * 1000;
+            timerResizeSv.Interval = settings.resize_millisecond;
 
             //イラストを表示
             setPicture();
+
+            // Loading画像を表示
+            setLoadingPicture();
         }
 
         private void setPicture()
         {
-            // このバイナリが実行されているパスを取得する
-            string path = Application.ExecutablePath;
-            int yenPosition = path.LastIndexOf('\\');
-            path = path.Substring(0, yenPosition);
+            string path = getCurrentPath();
 
             path += "\\xml\\" + myProduct.buttonImageFileName;
 
             pic.Image = System.Drawing.Image.FromFile(path);
         }
 
+        private void setLoadingPicture()
+        {
+            string path = getCurrentPath();
+
+            path += "\\settings\\loading.png";
+
+            pic_loading.Image = System.Drawing.Image.FromFile(path);
+        }
+
+        // このバイナリが実行されているパスを取得する
+        private string getCurrentPath()
+        {
+            
+            string path = Application.ExecutablePath;
+            int yenPosition = path.LastIndexOf('\\');
+            path = path.Substring(0, yenPosition);
+
+            return path;
+        }
 
         /// <summary>
         /// 「次へ」ボタンを押したとき
@@ -128,6 +150,7 @@ namespace SeichiJunreiStreetView
 
             nextMember = myMember;
 
+            timerResizeSv.Stop();
             timerResizeSv.Start();
         }
 
@@ -137,7 +160,9 @@ namespace SeichiJunreiStreetView
 
             webSV.Height = webSV.Width;
 
-            navigator(webMap, webMap.Width, webMap.Height, nextMember.map);
+            //navigator(webPhoto, webPhoto.Width, webPhoto.Height, nextMember.photo);
+
+            webPhoto.Navigate(nextMember.photo);
 
             try
             {
@@ -158,7 +183,7 @@ namespace SeichiJunreiStreetView
         /// <param name="url"></param>
         private void navigator(WebBrowser target,int width,int height,string url)
         {
-            target.Navigate(proxy);
+            //target.Navigate(proxy);
 
             //パラメータの指定
             string param1 = "width=" + HttpUtility.UrlEncode(width+"");
@@ -230,9 +255,26 @@ namespace SeichiJunreiStreetView
             timerYugamiFix.Stop();
         }
 
-        
 
-        
+
+        //アイコンをセットする
+        private void setIcon()
+        {
+            string path = getCurrentPath();
+            path += "\\settings\\icon.ico";
+            this.Icon = new Icon(path);
+        }
+
+        private void btnCallMap_Click(object sender, EventArgs e)
+        {
+            member myMember = (member)myProduct.members[pageNumber];
+
+            string mapUrl = myMember.map;
+
+            mapWindow mapw = new mapWindow(mapUrl);
+
+            mapw.Show();
+        }
 
         
         

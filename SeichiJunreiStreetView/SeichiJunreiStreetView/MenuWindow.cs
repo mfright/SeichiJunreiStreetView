@@ -10,6 +10,8 @@ using System.Windows.Forms;
 using System.IO;
 
 using System.Collections;         //追加
+using System.Web;
+using System.Diagnostics;
 
 namespace SeichiJunreiStreetView
 {
@@ -27,6 +29,10 @@ namespace SeichiJunreiStreetView
 
         private void MenuWindow_Load(object sender, EventArgs e)
         {
+            setIcon();
+
+            setBannerImage();
+
             setHeadPic();
 
             settings.loadIni();
@@ -38,9 +44,7 @@ namespace SeichiJunreiStreetView
         void setHeadPic()
         {
             // このバイナリが実行されているパスを取得する
-            string path = Application.ExecutablePath;
-            int yenPosition = path.LastIndexOf('\\');
-            path = path.Substring(0, yenPosition);
+            string path = getCurrentPath();
 
             path += "\\settings\\head.png";
 
@@ -98,10 +102,7 @@ namespace SeichiJunreiStreetView
             
         private void readXmls()
         {
-            // このバイナリが実行されているパスを取得する
-            string path = Application.ExecutablePath;
-            int yenPosition = path.LastIndexOf('\\');
-            path = path.Substring(0, yenPosition);
+            string path = getCurrentPath();
 
 
             //ファイル一覧を取得する
@@ -126,8 +127,8 @@ namespace SeichiJunreiStreetView
                 //listProducts.Items.Add(myProduct.title);
 
 
-                int pointY = 110 + (k / 2) * 200;
-                int pointX = 10 + (k % 2) * 400;
+                int pointY = 110 + (k / 3) * 200;
+                int pointX = 10 + (k % 3) * 400;
 
                 createButton(k + "", pointX, pointY, myProduct.buttonImageFileName);
             }
@@ -238,6 +239,16 @@ namespace SeichiJunreiStreetView
                 }
                 myMember.sv = url;
 
+                // photo要素を保管
+                ptrStart = strMember.IndexOf("<photo>") + 7;
+                ptrEnd = strMember.IndexOf("</photo>");
+                string photo = strMember.Substring(ptrStart, ptrEnd - ptrStart);
+                if (photo.IndexOf("http") != -1)
+                {
+                    photo = photo.Substring(photo.IndexOf("//") + 2);
+                }
+                myMember.photo = photo;
+
                 // mapを保管
                 ptrStart = strMember.IndexOf("<map>") + 5;
                 ptrEnd = strMember.IndexOf("</map>");
@@ -277,25 +288,6 @@ namespace SeichiJunreiStreetView
         
 
         
-        /*
-        /// <summary>
-        /// メニューを選択したとき
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void listProducts_Click(object sender, EventArgs e)
-        {
-            //選択されたメニューのタイトル文面を取得
-            string title = (string)listProducts.SelectedItem;
-
-            //タイトルに合致するものをallProductsから探す
-            product targetProduct = searchProduct(title);
-
-            // ViewMapWindowを表示する
-            ViewMapWindow myViewMapWindow = new ViewMapWindow(targetProduct);
-            myViewMapWindow.ShowDialog();
-            myViewMapWindow.Dispose();
-        } */
 
 
         /// <summary>
@@ -316,6 +308,45 @@ namespace SeichiJunreiStreetView
             }
 
             return null;
+        }
+
+        //アイコンをセットする
+        private void setIcon()
+        {
+            string path = getCurrentPath();
+            path += "\\settings\\icon.ico";
+            this.Icon = new Icon(path);
+        }
+
+        // このバイナリが実行されているパスを取得する
+        private string getCurrentPath()
+        {
+
+            string path = Application.ExecutablePath;
+            int yenPosition = path.LastIndexOf('\\');
+            path = path.Substring(0, yenPosition);
+
+            return path;
+        }
+
+        private void setBannerImage()
+        {
+            // このバイナリが実行されているパスを取得する
+            string path = getCurrentPath();
+            path += "\\settings\\animelocations.jpg";
+
+            btnAnimeLocations.BackgroundImage = System.Drawing.Image.FromFile(path);
+            btnAnimeLocations.BackgroundImageLayout = ImageLayout.Center;
+        }
+
+        private void btnAnimeLocations_Click(object sender, EventArgs e)
+        {
+            Process.Start("http://animelocations.iza-yoi.net");
+        }
+
+        private void MenuWindow_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

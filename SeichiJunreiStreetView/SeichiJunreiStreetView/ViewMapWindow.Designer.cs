@@ -29,21 +29,22 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ViewMapWindow));
             this.webSV = new System.Windows.Forms.WebBrowser();
             this.btnPrev = new System.Windows.Forms.Button();
             this.btnNext = new System.Windows.Forms.Button();
             this.btnRefer = new System.Windows.Forms.Button();
             this.labelTitle = new System.Windows.Forms.Label();
             this.labelPlace = new System.Windows.Forms.Label();
-            this.webMap = new System.Windows.Forms.WebBrowser();
+            this.webPhoto = new System.Windows.Forms.WebBrowser();
             this.lstPlaces = new System.Windows.Forms.ListBox();
             this.timerResizeSv = new System.Windows.Forms.Timer(this.components);
-            this.label1 = new System.Windows.Forms.Label();
             this.btnYugami = new System.Windows.Forms.Button();
             this.timerYugamiFix = new System.Windows.Forms.Timer(this.components);
             this.pic = new System.Windows.Forms.PictureBox();
+            this.pic_loading = new System.Windows.Forms.PictureBox();
+            this.btnCallMap = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pic)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_loading)).BeginInit();
             this.SuspendLayout();
             // 
             // webSV
@@ -51,14 +52,16 @@
             this.webSV.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.webSV.IsWebBrowserContextMenuEnabled = false;
             this.webSV.Location = new System.Drawing.Point(14, 39);
             this.webSV.MinimumSize = new System.Drawing.Size(20, 20);
             this.webSV.Name = "webSV";
             this.webSV.ScriptErrorsSuppressed = true;
             this.webSV.ScrollBarsEnabled = false;
-            this.webSV.Size = new System.Drawing.Size(548, 548);
+            this.webSV.Size = new System.Drawing.Size(679, 322);
             this.webSV.TabIndex = 0;
             this.webSV.Url = new System.Uri("", System.UriKind.Relative);
+            this.webSV.WebBrowserShortcutsEnabled = false;
             // 
             // btnPrev
             // 
@@ -76,7 +79,7 @@
             this.btnNext.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.btnNext.Location = new System.Drawing.Point(390, 1);
             this.btnNext.Name = "btnNext";
-            this.btnNext.Size = new System.Drawing.Size(276, 33);
+            this.btnNext.Size = new System.Drawing.Size(257, 33);
             this.btnNext.TabIndex = 2;
             this.btnNext.Text = "次へ";
             this.btnNext.UseVisualStyleBackColor = false;
@@ -85,7 +88,7 @@
             // btnRefer
             // 
             this.btnRefer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.btnRefer.Location = new System.Drawing.Point(672, 1);
+            this.btnRefer.Location = new System.Drawing.Point(808, 1);
             this.btnRefer.Name = "btnRefer";
             this.btnRefer.Size = new System.Drawing.Size(291, 33);
             this.btnRefer.TabIndex = 3;
@@ -112,16 +115,19 @@
             this.labelPlace.TabIndex = 6;
             this.labelPlace.Text = "秩父橋";
             // 
-            // webMap
+            // webPhoto
             // 
-            this.webMap.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.webMap.Location = new System.Drawing.Point(568, 129);
-            this.webMap.MinimumSize = new System.Drawing.Size(20, 20);
-            this.webMap.Name = "webMap";
-            this.webMap.ScriptErrorsSuppressed = true;
-            this.webMap.ScrollBarsEnabled = false;
-            this.webMap.Size = new System.Drawing.Size(395, 252);
-            this.webMap.TabIndex = 8;
+            this.webPhoto.AllowWebBrowserDrop = false;
+            this.webPhoto.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.webPhoto.IsWebBrowserContextMenuEnabled = false;
+            this.webPhoto.Location = new System.Drawing.Point(699, 129);
+            this.webPhoto.MinimumSize = new System.Drawing.Size(20, 20);
+            this.webPhoto.Name = "webPhoto";
+            this.webPhoto.ScriptErrorsSuppressed = true;
+            this.webPhoto.ScrollBarsEnabled = false;
+            this.webPhoto.Size = new System.Drawing.Size(395, 252);
+            this.webPhoto.TabIndex = 8;
+            this.webPhoto.WebBrowserShortcutsEnabled = false;
             // 
             // lstPlaces
             // 
@@ -130,7 +136,7 @@
             this.lstPlaces.Font = new System.Drawing.Font("MS UI Gothic", 15F);
             this.lstPlaces.FormattingEnabled = true;
             this.lstPlaces.ItemHeight = 20;
-            this.lstPlaces.Location = new System.Drawing.Point(568, 39);
+            this.lstPlaces.Location = new System.Drawing.Point(699, 39);
             this.lstPlaces.Name = "lstPlaces";
             this.lstPlaces.Size = new System.Drawing.Size(400, 84);
             this.lstPlaces.TabIndex = 9;
@@ -141,21 +147,10 @@
             this.timerResizeSv.Interval = 6000;
             this.timerResizeSv.Tick += new System.EventHandler(this.timerReloadSv_Tick);
             // 
-            // label1
-            // 
-            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("MS UI Gothic", 20F);
-            this.label1.Location = new System.Drawing.Point(224, 485);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(138, 27);
-            this.label1.TabIndex = 11;
-            this.label1.Text = "LOADING...";
-            // 
             // btnYugami
             // 
             this.btnYugami.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnYugami.Location = new System.Drawing.Point(459, 564);
+            this.btnYugami.Location = new System.Drawing.Point(590, 564);
             this.btnYugami.Name = "btnYugami";
             this.btnYugami.Size = new System.Drawing.Size(103, 23);
             this.btnYugami.TabIndex = 12;
@@ -171,35 +166,58 @@
             // pic
             // 
             this.pic.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.pic.Location = new System.Drawing.Point(568, 387);
+            this.pic.Location = new System.Drawing.Point(699, 387);
             this.pic.Name = "pic";
             this.pic.Size = new System.Drawing.Size(400, 200);
             this.pic.TabIndex = 13;
             this.pic.TabStop = false;
             // 
+            // pic_loading
+            // 
+            this.pic_loading.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pic_loading.Location = new System.Drawing.Point(14, 173);
+            this.pic_loading.Name = "pic_loading";
+            this.pic_loading.Size = new System.Drawing.Size(679, 414);
+            this.pic_loading.TabIndex = 14;
+            this.pic_loading.TabStop = false;
+            // 
+            // btnCallMap
+            // 
+            this.btnCallMap.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.btnCallMap.Location = new System.Drawing.Point(653, 1);
+            this.btnCallMap.Name = "btnCallMap";
+            this.btnCallMap.Size = new System.Drawing.Size(149, 32);
+            this.btnCallMap.TabIndex = 15;
+            this.btnCallMap.Text = "地図を表示";
+            this.btnCallMap.UseVisualStyleBackColor = false;
+            this.btnCallMap.Click += new System.EventHandler(this.btnCallMap_Click);
+            // 
             // ViewMapWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(975, 599);
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(1106, 599);
+            this.Controls.Add(this.btnCallMap);
             this.Controls.Add(this.pic);
             this.Controls.Add(this.btnYugami);
             this.Controls.Add(this.lstPlaces);
-            this.Controls.Add(this.webMap);
+            this.Controls.Add(this.webPhoto);
             this.Controls.Add(this.labelPlace);
             this.Controls.Add(this.labelTitle);
             this.Controls.Add(this.btnRefer);
             this.Controls.Add(this.btnNext);
             this.Controls.Add(this.btnPrev);
             this.Controls.Add(this.webSV);
-            this.Controls.Add(this.label1);
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Controls.Add(this.pic_loading);
             this.Name = "ViewMapWindow";
             this.Text = "アニメタイトル";
             this.Load += new System.EventHandler(this.ViewMapWindow_Load);
             this.Resize += new System.EventHandler(this.ViewMapWindow_Resize);
             ((System.ComponentModel.ISupportInitialize)(this.pic)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_loading)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -213,13 +231,14 @@
         private System.Windows.Forms.Button btnRefer;
         private System.Windows.Forms.Label labelTitle;
         private System.Windows.Forms.Label labelPlace;
-        private System.Windows.Forms.WebBrowser webMap;
+        private System.Windows.Forms.WebBrowser webPhoto;
         private System.Windows.Forms.ListBox lstPlaces;
         private System.Windows.Forms.Timer timerResizeSv;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnYugami;
         private System.Windows.Forms.Timer timerYugamiFix;
         private System.Windows.Forms.PictureBox pic;
+        private System.Windows.Forms.PictureBox pic_loading;
+        private System.Windows.Forms.Button btnCallMap;
     }
 }
 

@@ -36,10 +36,10 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("MS UI Gothic", 30F);
+            this.label1.Font = new System.Drawing.Font("MS UI Gothic", 35F);
             this.label1.Location = new System.Drawing.Point(12, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(168, 40);
+            this.label1.Size = new System.Drawing.Size(200, 47);
             this.label1.TabIndex = 0;
             this.label1.Text = "Loading...";
             // 
@@ -52,6 +52,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(284, 76);
             this.Controls.Add(this.label1);
             this.MaximizeBox = false;
@@ -60,6 +61,7 @@
             this.ShowIcon = false;
             this.Text = "loading...";
             this.Load += new System.EventHandler(this.loadingWindow_Load);
+            this.Leave += new System.EventHandler(this.loadingWindow_Leave);
             this.ResumeLayout(false);
             this.PerformLayout();
 

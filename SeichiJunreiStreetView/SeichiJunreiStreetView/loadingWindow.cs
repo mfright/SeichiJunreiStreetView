@@ -19,12 +19,18 @@ namespace SeichiJunreiStreetView
 
         private void loadingWindow_Load(object sender, EventArgs e)
         {
+            timerClose.Interval = settings.resize_millisecond;
             timerClose.Start();
         }
 
         private void timerClose_Tick(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void loadingWindow_Leave(object sender, EventArgs e)
+        {
+            this.Activate();
         }
     }
 }

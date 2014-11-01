@@ -8,7 +8,7 @@
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>SeichiJunreiStreetView</RootNamespace>
-    <AssemblyName>聖地巡礼</AssemblyName>
+    <AssemblyName>聖地巡礼SV</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -54,9 +54,21 @@
     <Compile Include="loadingWindow.Designer.cs">
       <DependentUpon>loadingWindow.cs</DependentUpon>
     </Compile>
+    <Compile Include="mapWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mapWindow.Designer.cs">
+      <DependentUpon>mapWindow.cs</DependentUpon>
+    </Compile>
     <Compile Include="member.cs" />
     <Compile Include="product.cs" />
     <Compile Include="settings.cs" />
+    <Compile Include="throuputCheckWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="throuputCheckWindow.Designer.cs">
+      <DependentUpon>throuputCheckWindow.cs</DependentUpon>
+    </Compile>
     <Compile Include="ViewMapWindow.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -73,6 +85,12 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="loadingWindow.resx">
       <DependentUpon>loadingWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mapWindow.resx">
+      <DependentUpon>mapWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="throuputCheckWindow.resx">
+      <DependentUpon>throuputCheckWindow.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ViewMapWindow.resx">
       <DependentUpon>ViewMapWindow.cs</DependentUpon>

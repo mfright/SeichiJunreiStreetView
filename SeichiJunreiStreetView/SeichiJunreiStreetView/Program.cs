@@ -16,7 +16,8 @@ namespace SeichiJunreiStreetView
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MenuWindow());
+            //Application.Run(new MenuWindow());
+            Application.Run(new throuputCheckWindow());
         }
     }
 }

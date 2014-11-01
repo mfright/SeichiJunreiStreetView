@@ -5,13 +5,13 @@ using System.Text;
 using System.Threading.Tasks;
 
 using System.IO;
-using System.Text;
 
 namespace SeichiJunreiStreetView
 {
     class settings
     {
-        public static int resize_second = 10;
+        public static int resize_millisecond = 0;
+
 
         public static void loadIni()
         {
@@ -28,7 +28,9 @@ namespace SeichiJunreiStreetView
 
             sr.Close();
 
-            
+            // 設定を読み込む
+
+            /*
             if(text.IndexOf("resize_second:") != -1){
                 int startPoint = text.IndexOf("resize_second:") + 14;
                 int endPoint = text.IndexOf("\r", startPoint);
@@ -36,7 +38,7 @@ namespace SeichiJunreiStreetView
                 string second = text.Substring(startPoint, endPoint - startPoint);
                 resize_second = int.Parse(second);
 
-            }
+            }*/
 
             
         }
