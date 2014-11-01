@@ -48,7 +48,7 @@
             this.ClientSize = new System.Drawing.Size(502, 358);
             this.Controls.Add(this.webBrowser1);
             this.Name = "mapWindow";
-            this.Text = "mapWindow";
+            this.Text = "地図";
             this.Load += new System.EventHandler(this.mapWindow_Load);
             this.ResumeLayout(false);
 

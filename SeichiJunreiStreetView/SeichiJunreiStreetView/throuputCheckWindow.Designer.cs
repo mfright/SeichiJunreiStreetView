@@ -91,7 +91,7 @@
             this.Controls.Add(this.webBrowserImage);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "throuputCheckWindow";
-            this.Text = "throuputCheckWindow";
+            this.Text = "通信速度を測定中";
             this.Load += new System.EventHandler(this.throuputCheckWindow_Load);
             ((System.ComponentModel.ISupportInitialize)(this.picLoading)).EndInit();
             this.ResumeLayout(false);

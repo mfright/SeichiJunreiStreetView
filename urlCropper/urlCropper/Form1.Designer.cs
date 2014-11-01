@@ -39,6 +39,8 @@
             this.txtMap = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.txtRef = new System.Windows.Forms.TextBox();
+            this.txtPhoto = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // txtSv
@@ -52,7 +54,7 @@
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.button1.Location = new System.Drawing.Point(3, 257);
+            this.button1.Location = new System.Drawing.Point(3, 323);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(221, 74);
             this.button1.TabIndex = 1;
@@ -62,7 +64,7 @@
             // 
             // txtXml
             // 
-            this.txtXml.Location = new System.Drawing.Point(3, 357);
+            this.txtXml.Location = new System.Drawing.Point(3, 423);
             this.txtXml.Multiline = true;
             this.txtXml.Name = "txtXml";
             this.txtXml.Size = new System.Drawing.Size(224, 99);
@@ -80,7 +82,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(6, 341);
+            this.label2.Location = new System.Drawing.Point(6, 407);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(105, 12);
             this.label2.TabIndex = 4;
@@ -136,11 +138,29 @@
             this.txtRef.Size = new System.Drawing.Size(224, 32);
             this.txtRef.TabIndex = 10;
             // 
+            // txtPhoto
+            // 
+            this.txtPhoto.Location = new System.Drawing.Point(3, 286);
+            this.txtPhoto.Name = "txtPhoto";
+            this.txtPhoto.Size = new System.Drawing.Size(224, 19);
+            this.txtPhoto.TabIndex = 11;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(1, 271);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(167, 12);
+            this.label6.TabIndex = 12;
+            this.label6.Text = "現場写真のURLを入れてください。";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(239, 464);
+            this.ClientSize = new System.Drawing.Size(239, 530);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.txtPhoto);
             this.Controls.Add(this.txtRef);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.txtMap);
@@ -173,6 +193,8 @@
         private System.Windows.Forms.TextBox txtMap;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txtRef;
+        private System.Windows.Forms.TextBox txtPhoto;
+        private System.Windows.Forms.Label label6;
     }
 }
 

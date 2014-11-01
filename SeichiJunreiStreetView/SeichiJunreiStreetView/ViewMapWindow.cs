@@ -88,6 +88,8 @@ namespace SeichiJunreiStreetView
             path += "\\settings\\loading.png";
 
             pic_loading.Image = System.Drawing.Image.FromFile(path);
+            //pic_photoLoading.Image = System.Drawing.Image.FromFile(path);
+            setOpacityImage(pic_photoLoading, path);
         }
 
         // このバイナリが実行されているパスを取得する
@@ -134,6 +136,9 @@ namespace SeichiJunreiStreetView
         private void refresh()
         {
             webSV.Height = webSV.Width / 2;
+
+            pic_photoLoading.Visible = true;
+            
             
             // 場所一覧表の当該箇所をアクティブにする
             lstPlaces.SelectedIndex = pageNumber;
@@ -150,8 +155,47 @@ namespace SeichiJunreiStreetView
 
             nextMember = myMember;
 
-            timerResizeSv.Stop();
+            timerResizeSv.Stop();   //タイマーインターバル初期化
             timerResizeSv.Start();
+        }
+
+        //指定した画像ファイルを半透明で指定のPictureBoxに表示する
+        private void setOpacityImage(PictureBox PictureBox1,string imageFilePath)
+        {
+            //描画先とするImageオブジェクトを作成する
+            Bitmap canvas = new Bitmap(PictureBox1.Width, PictureBox1.Height);
+            //ImageオブジェクトのGraphicsオブジェクトを作成する
+            Graphics g = Graphics.FromImage(canvas);
+
+            //画像を読み込む
+            Image img = Image.FromFile(imageFilePath);
+
+            //ColorMatrixオブジェクトの作成
+            System.Drawing.Imaging.ColorMatrix cm =
+                new System.Drawing.Imaging.ColorMatrix();
+            //ColorMatrixの行列の値を変更して、アルファ値が0.5に変更されるようにする
+            cm.Matrix00 = 1;
+            cm.Matrix11 = 1;
+            cm.Matrix22 = 1;
+            cm.Matrix33 = 0.5F;
+            cm.Matrix44 = 1;
+
+            //ImageAttributesオブジェクトの作成
+            System.Drawing.Imaging.ImageAttributes ia =
+                new System.Drawing.Imaging.ImageAttributes();
+            //ColorMatrixを設定する
+            ia.SetColorMatrix(cm);
+
+            //ImageAttributesを使用して画像を描画
+            g.DrawImage(img, new Rectangle(0, 0, img.Width, img.Height),
+                0, 0, img.Width, img.Height, GraphicsUnit.Pixel, ia);
+
+            //リソースを解放する
+            img.Dispose();
+            g.Dispose();
+
+            //PictureBox1に表示する
+            PictureBox1.Image = canvas;
         }
 
         private void timerReloadSv_Tick(object sender, EventArgs e)
@@ -160,7 +204,7 @@ namespace SeichiJunreiStreetView
 
             webSV.Height = webSV.Width;
 
-            //navigator(webPhoto, webPhoto.Width, webPhoto.Height, nextMember.photo);
+            pic_photoLoading.Visible = false;
 
             webPhoto.Navigate(nextMember.photo);
 

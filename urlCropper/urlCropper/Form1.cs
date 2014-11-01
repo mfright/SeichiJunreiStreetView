@@ -54,6 +54,9 @@ namespace urlCropper
             // 参考サイトURLを取得
             string urlRef = txtRef.Text;
 
+            //現場写真URLを取得
+            string urlPhoto = txtPhoto.Text;
+
 
             // XMLの生成
 
@@ -63,6 +66,7 @@ namespace urlCropper
             xmlCode += "  <sv>" + urlSv + "</sv>\r\n";
             xmlCode += "  <map>" + urlMap + "</map>\r\n";
             xmlCode += "  <ref>" + urlRef + "</ref>\r\n";
+            xmlCode += "  <photo>" + urlPhoto + "</photo>\r\n";
             xmlCode += "</member>\r\n\r\n\r\n";
 
             txtXml.Text = xmlCode;
@@ -73,6 +77,7 @@ namespace urlCropper
             txtSv.Text = "";
             txtMap.Text = "";
             txtRef.Text = "";
+            txtPhoto.Text = "";
         }
     }
 }

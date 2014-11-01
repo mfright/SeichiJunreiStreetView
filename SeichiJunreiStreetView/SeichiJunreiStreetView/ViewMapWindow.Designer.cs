@@ -43,8 +43,10 @@
             this.pic = new System.Windows.Forms.PictureBox();
             this.pic_loading = new System.Windows.Forms.PictureBox();
             this.btnCallMap = new System.Windows.Forms.Button();
+            this.pic_photoLoading = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_loading)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_photoLoading)).BeginInit();
             this.SuspendLayout();
             // 
             // webSV
@@ -58,7 +60,7 @@
             this.webSV.Name = "webSV";
             this.webSV.ScriptErrorsSuppressed = true;
             this.webSV.ScrollBarsEnabled = false;
-            this.webSV.Size = new System.Drawing.Size(679, 322);
+            this.webSV.Size = new System.Drawing.Size(570, 322);
             this.webSV.TabIndex = 0;
             this.webSV.Url = new System.Uri("", System.UriKind.Relative);
             this.webSV.WebBrowserShortcutsEnabled = false;
@@ -87,6 +89,8 @@
             // 
             // btnRefer
             // 
+            this.btnRefer.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.btnRefer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.btnRefer.Location = new System.Drawing.Point(808, 1);
             this.btnRefer.Name = "btnRefer";
@@ -101,9 +105,9 @@
             this.labelTitle.AutoSize = true;
             this.labelTitle.Location = new System.Drawing.Point(3, 3);
             this.labelTitle.Name = "labelTitle";
-            this.labelTitle.Size = new System.Drawing.Size(211, 12);
+            this.labelTitle.Size = new System.Drawing.Size(67, 12);
             this.labelTitle.TabIndex = 4;
-            this.labelTitle.Text = "あの日見た花の名前を僕たちはまだ知らない";
+            this.labelTitle.Text = "アニメ作品名";
             // 
             // labelPlace
             // 
@@ -113,19 +117,19 @@
             this.labelPlace.Name = "labelPlace";
             this.labelPlace.Size = new System.Drawing.Size(56, 16);
             this.labelPlace.TabIndex = 6;
-            this.labelPlace.Text = "秩父橋";
+            this.labelPlace.Text = "場所名";
             // 
             // webPhoto
             // 
             this.webPhoto.AllowWebBrowserDrop = false;
             this.webPhoto.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.webPhoto.IsWebBrowserContextMenuEnabled = false;
-            this.webPhoto.Location = new System.Drawing.Point(699, 129);
+            this.webPhoto.Location = new System.Drawing.Point(590, 89);
             this.webPhoto.MinimumSize = new System.Drawing.Size(20, 20);
             this.webPhoto.Name = "webPhoto";
             this.webPhoto.ScriptErrorsSuppressed = true;
             this.webPhoto.ScrollBarsEnabled = false;
-            this.webPhoto.Size = new System.Drawing.Size(395, 252);
+            this.webPhoto.Size = new System.Drawing.Size(504, 292);
             this.webPhoto.TabIndex = 8;
             this.webPhoto.WebBrowserShortcutsEnabled = false;
             // 
@@ -136,9 +140,9 @@
             this.lstPlaces.Font = new System.Drawing.Font("MS UI Gothic", 15F);
             this.lstPlaces.FormattingEnabled = true;
             this.lstPlaces.ItemHeight = 20;
-            this.lstPlaces.Location = new System.Drawing.Point(699, 39);
+            this.lstPlaces.Location = new System.Drawing.Point(590, 39);
             this.lstPlaces.Name = "lstPlaces";
-            this.lstPlaces.Size = new System.Drawing.Size(400, 84);
+            this.lstPlaces.Size = new System.Drawing.Size(509, 44);
             this.lstPlaces.TabIndex = 9;
             this.lstPlaces.Click += new System.EventHandler(this.lstPlaces_Click);
             // 
@@ -150,9 +154,9 @@
             // btnYugami
             // 
             this.btnYugami.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnYugami.Location = new System.Drawing.Point(590, 564);
+            this.btnYugami.Location = new System.Drawing.Point(460, 532);
             this.btnYugami.Name = "btnYugami";
-            this.btnYugami.Size = new System.Drawing.Size(103, 23);
+            this.btnYugami.Size = new System.Drawing.Size(124, 55);
             this.btnYugami.TabIndex = 12;
             this.btnYugami.Text = "歪み修正再読込";
             this.btnYugami.UseVisualStyleBackColor = true;
@@ -166,7 +170,7 @@
             // pic
             // 
             this.pic.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.pic.Location = new System.Drawing.Point(699, 387);
+            this.pic.Location = new System.Drawing.Point(653, 387);
             this.pic.Name = "pic";
             this.pic.Size = new System.Drawing.Size(400, 200);
             this.pic.TabIndex = 13;
@@ -177,9 +181,10 @@
             this.pic_loading.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pic_loading.Location = new System.Drawing.Point(14, 173);
+            this.pic_loading.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pic_loading.Location = new System.Drawing.Point(14, 154);
             this.pic_loading.Name = "pic_loading";
-            this.pic_loading.Size = new System.Drawing.Size(679, 414);
+            this.pic_loading.Size = new System.Drawing.Size(570, 433);
             this.pic_loading.TabIndex = 14;
             this.pic_loading.TabStop = false;
             // 
@@ -194,12 +199,24 @@
             this.btnCallMap.UseVisualStyleBackColor = false;
             this.btnCallMap.Click += new System.EventHandler(this.btnCallMap_Click);
             // 
+            // pic_photoLoading
+            // 
+            this.pic_photoLoading.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.pic_photoLoading.BackColor = System.Drawing.Color.Transparent;
+            this.pic_photoLoading.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pic_photoLoading.Location = new System.Drawing.Point(590, 89);
+            this.pic_photoLoading.Name = "pic_photoLoading";
+            this.pic_photoLoading.Size = new System.Drawing.Size(509, 292);
+            this.pic_photoLoading.TabIndex = 16;
+            this.pic_photoLoading.TabStop = false;
+            // 
             // ViewMapWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1106, 599);
+            this.Controls.Add(this.pic_photoLoading);
             this.Controls.Add(this.btnCallMap);
             this.Controls.Add(this.pic);
             this.Controls.Add(this.btnYugami);
@@ -218,6 +235,7 @@
             this.Resize += new System.EventHandler(this.ViewMapWindow_Resize);
             ((System.ComponentModel.ISupportInitialize)(this.pic)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_loading)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_photoLoading)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -239,6 +257,7 @@
         private System.Windows.Forms.PictureBox pic;
         private System.Windows.Forms.PictureBox pic_loading;
         private System.Windows.Forms.Button btnCallMap;
+        private System.Windows.Forms.PictureBox pic_photoLoading;
     }
 }
 
