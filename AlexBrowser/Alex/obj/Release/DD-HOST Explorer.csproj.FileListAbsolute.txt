@@ -1,0 +1,27 @@
+C:\Documents and Settings\FRIGHT\My Documents\Visual Studio 2008\Projects\DD-HOST Explorer Custom\DD-HOST Explorer\bin\Release\DD-HOST Explorer.exe
+C:\Documents and Settings\FRIGHT\My Documents\Visual Studio 2008\Projects\DD-HOST Explorer Custom\DD-HOST Explorer\bin\Release\DD-HOST Explorer.pdb
+C:\Documents and Settings\FRIGHT\My Documents\Visual Studio 2008\Projects\DD-HOST Explorer Custom\DD-HOST Explorer\obj\Release\ResolveAssemblyReference.cache
+C:\Documents and Settings\FRIGHT\My Documents\Visual Studio 2008\Projects\DD-HOST Explorer Custom\DD-HOST Explorer\obj\Release\DD_HOST_Explorer.Form1.resources
+C:\Documents and Settings\FRIGHT\My Documents\Visual Studio 2008\Projects\DD-HOST Explorer Custom\DD-HOST Explorer\obj\Release\DD_HOST_Explorer.Properties.Resources.resources
+C:\Documents and Settings\FRIGHT\My Documents\Visual Studio 2008\Projects\DD-HOST Explorer Custom\DD-HOST Explorer\obj\Release\DD_HOST_Explorer.Version.resources
+C:\Documents and Settings\FRIGHT\My Documents\Visual Studio 2008\Projects\DD-HOST Explorer Custom\DD-HOST Explorer\obj\Release\DD-HOST Explorer.csproj.GenerateResource.Cache
+C:\Documents and Settings\FRIGHT\My Documents\Visual Studio 2008\Projects\DD-HOST Explorer Custom\DD-HOST Explorer\obj\Release\DD-HOST Explorer.exe
+C:\Documents and Settings\FRIGHT\My Documents\Visual Studio 2008\Projects\DD-HOST Explorer Custom\DD-HOST Explorer\obj\Release\DD-HOST Explorer.pdb
+C:\Documents and Settings\FRIGHT\My Documents\AVG-夢使い\DD-HOST Explorer Custom\DD-HOST Explorer\obj\Release\DD-HOST Explorer.exe
+C:\Documents and Settings\FRIGHT\My Documents\AVG-夢使い\DD-HOST Explorer Custom\DD-HOST Explorer\obj\Release\DD-HOST Explorer.pdb
+C:\Documents and Settings\FRIGHT\My Documents\AVG-夢使い\root\browser\DD-HOST Explorer.exe
+C:\Documents and Settings\FRIGHT\My Documents\AVG-夢使い\root\browser\DD-HOST Explorer.pdb
+C:\Documents and Settings\FRIGHT\My Documents\AVG-夢使い\DD-HOST Explorer Custom\DD-HOST Explorer\obj\Release\ResolveAssemblyReference.cache
+C:\Documents and Settings\FRIGHT\My Documents\AVG-夢使い\DD-HOST Explorer Custom\DD-HOST Explorer\obj\Release\DD_HOST_Explorer.Form1.resources
+C:\Documents and Settings\FRIGHT\My Documents\AVG-夢使い\DD-HOST Explorer Custom\DD-HOST Explorer\obj\Release\DD_HOST_Explorer.Properties.Resources.resources
+C:\Documents and Settings\FRIGHT\My Documents\AVG-夢使い\DD-HOST Explorer Custom\DD-HOST Explorer\obj\Release\DD_HOST_Explorer.Version.resources
+C:\Documents and Settings\FRIGHT\My Documents\AVG-夢使い\DD-HOST Explorer Custom\DD-HOST Explorer\obj\Release\DD-HOST Explorer.csproj.GenerateResource.Cache
+C:\Documents and Settings\FRIGHT\My Documents\Visual Studio 2008\Projects\AlexBrowser\DD-HOST Explorer\obj\Release\DD-HOST Explorer.exe
+C:\Documents and Settings\FRIGHT\My Documents\Visual Studio 2008\Projects\AlexBrowser\DD-HOST Explorer\obj\Release\DD-HOST Explorer.pdb
+C:\Documents and Settings\FRIGHT\My Documents\Visual Studio 2008\Projects\AlexBrowser\DD-HOST Explorer\bin\Release\DD-HOST Explorer.exe
+C:\Documents and Settings\FRIGHT\My Documents\Visual Studio 2008\Projects\AlexBrowser\DD-HOST Explorer\bin\Release\DD-HOST Explorer.pdb
+C:\Documents and Settings\FRIGHT\My Documents\Visual Studio 2008\Projects\AlexBrowser\DD-HOST Explorer\obj\Release\ResolveAssemblyReference.cache
+C:\Documents and Settings\FRIGHT\My Documents\Visual Studio 2008\Projects\AlexBrowser\DD-HOST Explorer\obj\Release\DD_HOST_Explorer.Form1.resources
+C:\Documents and Settings\FRIGHT\My Documents\Visual Studio 2008\Projects\AlexBrowser\DD-HOST Explorer\obj\Release\DD_HOST_Explorer.Properties.Resources.resources
+C:\Documents and Settings\FRIGHT\My Documents\Visual Studio 2008\Projects\AlexBrowser\DD-HOST Explorer\obj\Release\DD_HOST_Explorer.Version.resources
+C:\Documents and Settings\FRIGHT\My Documents\Visual Studio 2008\Projects\AlexBrowser\DD-HOST Explorer\obj\Release\DD-HOST Explorer.csproj.GenerateResource.Cache

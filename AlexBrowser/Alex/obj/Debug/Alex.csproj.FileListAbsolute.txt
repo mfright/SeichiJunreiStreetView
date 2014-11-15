@@ -1,0 +1,9 @@
+C:\Users\_\Documents\GitHub\SeichiJunreiStreetView\AlexBrowser\Alex\obj\Debug\Alex.csprojResolveAssemblyReference.cache
+C:\Users\_\Documents\GitHub\SeichiJunreiStreetView\AlexBrowser\Alex\obj\Debug\DD_HOST_Explorer.Form1.resources
+C:\Users\_\Documents\GitHub\SeichiJunreiStreetView\AlexBrowser\Alex\obj\Debug\DD_HOST_Explorer.Properties.Resources.resources
+C:\Users\_\Documents\GitHub\SeichiJunreiStreetView\AlexBrowser\Alex\obj\Debug\DD_HOST_Explorer.Version.resources
+C:\Users\_\Documents\GitHub\SeichiJunreiStreetView\AlexBrowser\Alex\obj\Debug\Alex.csproj.GenerateResource.Cache
+C:\Users\_\Documents\GitHub\SeichiJunreiStreetView\AlexBrowser\Alex\bin\Debug\alex.exe
+C:\Users\_\Documents\GitHub\SeichiJunreiStreetView\AlexBrowser\Alex\bin\Debug\alex.pdb
+C:\Users\_\Documents\GitHub\SeichiJunreiStreetView\AlexBrowser\Alex\obj\Debug\alex.exe
+C:\Users\_\Documents\GitHub\SeichiJunreiStreetView\AlexBrowser\Alex\obj\Debug\alex.pdb

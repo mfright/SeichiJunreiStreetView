@@ -52,7 +52,6 @@
             this.btnAnimeLocations.Name = "btnAnimeLocations";
             this.btnAnimeLocations.Size = new System.Drawing.Size(200, 40);
             this.btnAnimeLocations.TabIndex = 2;
-            this.btnAnimeLocations.Text = "button1";
             this.btnAnimeLocations.UseVisualStyleBackColor = true;
             this.btnAnimeLocations.Click += new System.EventHandler(this.btnAnimeLocations_Click);
             // 
@@ -66,7 +65,7 @@
             this.Controls.Add(this.picHead);
             this.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.Name = "MenuWindow";
-            this.Text = "ストリートビュー聖地巡礼";
+            this.Text = "聖地巡礼ストリートビュー";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.MenuWindow_FormClosed);
             this.Load += new System.EventHandler(this.MenuWindow_Load);
             ((System.ComponentModel.ISupportInitialize)(this.picHead)).EndInit();

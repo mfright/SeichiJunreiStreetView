@@ -186,6 +186,7 @@ namespace SeichiJunreiStreetView
             ptrEnd = stResult.IndexOf("</button>", ptrStart);
             myProduct.buttonImageFileName = stResult.Substring(ptrStart, ptrEnd - ptrStart);
 
+            
 
 
             //聖地のmemberらを取得する
@@ -266,6 +267,21 @@ namespace SeichiJunreiStreetView
                 
                 myMember.refpage = url;
 
+
+                // messageを保管
+                ptrStart = strMember.IndexOf("<message>") + 9;
+                ptrEnd = strMember.IndexOf("</message>", ptrStart);
+                if (ptrStart > 0 && ptrEnd > 0)
+                {
+                    //もしmessageがあれば、改行を入れて保存
+                    string mes = strMember.Substring(ptrStart, ptrEnd - ptrStart);
+                    for(int i=40;i<mes.Length; i+=40){
+
+                        mes = mes.Insert(i, "\r\n");
+                    }
+                    myMember.message = mes;
+
+                }
 
 
                 //myMemberをmyProductへ追加

@@ -1,0 +1,18 @@
+C:\Documents and Settings\FRIGHT\My Documents\Visual Studio 2008\Projects\DD-HOST Explorer\DD-HOST Explorer\bin\Debug\DD-HOST Explorer.exe
+C:\Documents and Settings\FRIGHT\My Documents\Visual Studio 2008\Projects\DD-HOST Explorer\DD-HOST Explorer\bin\Debug\DD-HOST Explorer.pdb
+C:\Documents and Settings\FRIGHT\My Documents\Visual Studio 2008\Projects\DD-HOST Explorer\DD-HOST Explorer\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\FRIGHT\My Documents\Visual Studio 2008\Projects\DD-HOST Explorer\DD-HOST Explorer\obj\Debug\DD_HOST_Explorer.Form1.resources
+C:\Documents and Settings\FRIGHT\My Documents\Visual Studio 2008\Projects\DD-HOST Explorer\DD-HOST Explorer\obj\Debug\DD_HOST_Explorer.Properties.Resources.resources
+C:\Documents and Settings\FRIGHT\My Documents\Visual Studio 2008\Projects\DD-HOST Explorer\DD-HOST Explorer\obj\Debug\DD-HOST Explorer.csproj.GenerateResource.Cache
+C:\Documents and Settings\FRIGHT\My Documents\Visual Studio 2008\Projects\DD-HOST Explorer\DD-HOST Explorer\obj\Debug\DD-HOST Explorer.exe
+C:\Documents and Settings\FRIGHT\My Documents\Visual Studio 2008\Projects\DD-HOST Explorer\DD-HOST Explorer\obj\Debug\DD-HOST Explorer.pdb
+C:\Documents and Settings\FRIGHT\My Documents\Visual Studio 2008\Projects\DD-HOST Explorer\DD-HOST Explorer\obj\Debug\DD_HOST_Explorer.Version.resources
+C:\Documents and Settings\FRIGHT\My Documents\Visual Studio 2008\Projects\DD-HOST Explorer Custom\DD-HOST Explorer\obj\Debug\DD-HOST Explorer.exe
+C:\Documents and Settings\FRIGHT\My Documents\Visual Studio 2008\Projects\DD-HOST Explorer Custom\DD-HOST Explorer\obj\Debug\DD-HOST Explorer.pdb
+C:\Documents and Settings\FRIGHT\My Documents\Visual Studio 2008\Projects\DD-HOST Explorer Custom\DD-HOST Explorer\bin\Debug\DD-HOST Explorer.exe
+C:\Documents and Settings\FRIGHT\My Documents\Visual Studio 2008\Projects\DD-HOST Explorer Custom\DD-HOST Explorer\bin\Debug\DD-HOST Explorer.pdb
+C:\Documents and Settings\FRIGHT\My Documents\Visual Studio 2008\Projects\DD-HOST Explorer Custom\DD-HOST Explorer\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\FRIGHT\My Documents\Visual Studio 2008\Projects\DD-HOST Explorer Custom\DD-HOST Explorer\obj\Debug\DD_HOST_Explorer.Form1.resources
+C:\Documents and Settings\FRIGHT\My Documents\Visual Studio 2008\Projects\DD-HOST Explorer Custom\DD-HOST Explorer\obj\Debug\DD_HOST_Explorer.Properties.Resources.resources
+C:\Documents and Settings\FRIGHT\My Documents\Visual Studio 2008\Projects\DD-HOST Explorer Custom\DD-HOST Explorer\obj\Debug\DD_HOST_Explorer.Version.resources
+C:\Documents and Settings\FRIGHT\My Documents\Visual Studio 2008\Projects\DD-HOST Explorer Custom\DD-HOST Explorer\obj\Debug\DD-HOST Explorer.csproj.GenerateResource.Cache

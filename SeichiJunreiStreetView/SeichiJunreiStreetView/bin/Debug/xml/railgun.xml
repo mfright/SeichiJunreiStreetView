@@ -6,12 +6,215 @@
 <members>
 
 <member>
-  <place>秩父橋上</place>
-  <sv>https://maps.google.co.jp/maps?q=36.018091,139.086045&amp;num=1&amp;t=h&amp;hl=ja&amp;brcurrent=3,0x601ec9095a29dee3:0x28d9cd41869193f1,0&amp;ie=UTF8&amp;ll=36.018,139.086059&amp;spn=0.000631,0.001006&amp;z=14&amp;layer=c&amp;cbll=36.018,139.086059&amp;panoid=pRbioxlLQnlN5w-eVRQGLA&amp;cbp=12,3.03,,0,0.24&amp;source=embed&amp;output=svembed</sv>
-  <map>https://maps.google.co.jp/maps?q=36.018091,139.086045&amp;num=1&amp;t=h&amp;hl=ja&amp;brcurrent=3,0x601ec9095a29dee3:0x28d9cd41869193f1,0&amp;ie=UTF8&amp;ll=36.018,139.086059&amp;spn=0.000631,0.001006&amp;z=14&amp;output=embed</map>
-  <ref>http://animelocations.iza-yoi.net/anohana-bridge.html#bridge</ref>
-  <photo>https://lh6.googleusercontent.com/-03Fous_5LTQ/UrZ9jW5S4_I/AAAAAAAAJbI/iD0wxHZXLZs/s400/DSCF3240.JPG</photo>
+  <place>立川駅北側　BookOff裏</place>
+  <sv>https://maps.google.co.jp/maps?f=q&amp;source=embed&amp;hl=ja&amp;geocode=&amp;q=%E6%9D%B1%E4%BA%AC%E9%83%BD%E7%AB%8B%E5%B7%9D%E5%B8%82%E9%8C%A6%E7%94%BA%EF%BC%91%E4%B8%81%E7%9B%AE%EF%BC%93%E2%88%92%EF%BC%92%EF%BC%90+%E3%83%A2%E3%82%B9%E3%83%90%E3%83%BC%E3%82%AC%E3%83%BC+%E7%AB%8B%E5%B7%9D%E5%8D%97%E5%8F%A3%E5%BA%97&amp;aq=0&amp;sll=35.697526,139.417813&amp;sspn=0.010822,0.016458&amp;t=h&amp;brcurrent=3,0x6018e17a8286b0ad:0x2091cdc2045dbd0b,0&amp;ie=UTF8&amp;hq=&amp;hnear=&amp;ll=35.697526,139.417813&amp;spn=0.006295,0.006295&amp;layer=c&amp;cbll=35.700292,139.413735&amp;panoid=8ZakKQoHmkSGKAyLE01uMw&amp;cbp=12,194.01,,0,-5.4&amp;output=svembed</sv>
+  <map>https://maps.google.co.jp/maps?q=35.700387,139.413765&amp;num=1&amp;t=h&amp;hl=ja&amp;brcurrent=3,0x6018e1706969431f:0x70f16dbd81976206,0&amp;ie=UTF8&amp;ll=35.700292,139.413735&amp;spn=0.000338,0.000514&amp;z=14&amp;output=embed</map>
+  <ref>http://animelocations.iza-yoi.net/railgun-tachikawa.html#01</ref>
+  <photo>https://lh6.googleusercontent.com/-Kcx4rEyE8KM/UhpJLU66eOI/AAAAAAAACTI/2K-CKxmwXTs/s400/DSCF0371.JPG</photo>
+  <message>立川駅周辺は、ガッチャマンクラウズの舞台になっています。それと、超電磁砲の学園都市の舞台にも。</message>
 </member>
+
+
+<member>
+  <place>AKB48劇場</place>
+  <sv>https://maps.google.co.jp/maps?f=q&amp;source=embed&amp;hl=ja&amp;geocode=&amp;q=%E7%A7%8B%E8%91%89%E5%8E%9F&amp;aq=&amp;sll=34.790009,138.424012&amp;sspn=44.177112,67.412109&amp;t=h&amp;brcurrent=3,0x60188c1dc4f2b575:0x6b4461436d59eb6d,0&amp;ie=UTF8&amp;hq=&amp;hnear=%E6%9D%B1%E4%BA%AC%E9%83%BD%E5%8F%B0%E6%9D%B1%E5%8C%BA%E7%A7%8B%E8%91%89%E5%8E%9F&amp;ll=35.702069,139.775327&amp;spn=0.000963,0.001029&amp;z=14&amp;layer=c&amp;cbll=35.700903,139.77133&amp;panoid=ucXvDxxsAoru-HrgfMWngg&amp;cbp=12,118.68,,0,-17.84&amp;output=svembed</sv>
+  <map>https://maps.google.co.jp/maps?q=35.700899,139.771902&amp;num=1&amp;t=h&amp;hl=ja&amp;brcurrent=3,0x60188c1d9486b3ab:0xf7a57b8eeb78ffc2,0,0x60188c1d942c83ed:0x424d59a38acd454d&amp;ie=UTF8&amp;ll=35.700739,139.771722&amp;spn=0.001913,0.002057&amp;z=14&amp;output=embed</map>
+  <ref>http://animelocations.iza-yoi.net/railgun-tachikawa.html#02</ref>
+  <photo>http://farm8.staticflickr.com/7011/6740763589_2e511167bc.jpg</photo>
+  <message>これだけ秋葉原が舞台。なぜAKB？</message>
+</member>
+
+
+<member>
+  <place>立川駅北バスターミナル</place>
+  <sv>https://maps.google.co.jp/maps?q=35.69903,139.413374&amp;num=1&amp;t=h&amp;hl=ja&amp;brcurrent=3,0x6018e17a879b0eeb:0xc52385030219fa97,0,0x6018e17a86e8f7c5:0x563b546c99f2c2a5&amp;ie=UTF8&amp;ll=35.698991,139.413321&amp;spn=0.000676,0.001029&amp;z=14&amp;layer=c&amp;cbll=35.698975,139.413355&amp;panoid=5jH4vaTZPCaA_Ea_9uOMKg&amp;cbp=12,276.8,,0,0.47&amp;source=embed&amp;output=svembed</sv>
+  <map>https://maps.google.co.jp/maps?q=35.69903,139.413374&amp;num=1&amp;t=h&amp;hl=ja&amp;brcurrent=3,0x6018e17a879b0eeb:0xc52385030219fa97,0,0x6018e17a86e8f7c5:0x563b546c99f2c2a5&amp;ie=UTF8&amp;ll=35.698991,139.413321&amp;spn=0.000676,0.001029&amp;z=14&amp;output=embed</map>
+  <ref>http://animelocations.iza-yoi.net/railgun-tachikawa.html#03</ref>
+  <photo>https://lh5.googleusercontent.com/-Jc1TKeVNLRE/UhpGM16jTWI/AAAAAAAACSY/XrHuOn0akeI/s400/DSCF0365.JPG</photo>
+  <message>左側がバスターミナルと立川駅です。</message>
+</member>
+
+
+<member>
+  <place>立川北駅北側</place>
+  <sv>https://maps.google.co.jp/maps?q=35.69903,139.413374&amp;num=1&amp;t=h&amp;hl=ja&amp;brcurrent=3,0x6018e170839e7b81:0x1707245c09fce74b,0&amp;ie=UTF8&amp;ll=35.698991,139.413321&amp;spn=0.001361,0.002057&amp;z=14&amp;layer=c&amp;cbll=35.70023,139.412581&amp;panoid=D_idDOvz9mCJJ_mJkNNL0Q&amp;cbp=12,2.74,,2,-4.17&amp;source=embed&amp;output=svembed</sv>
+  <map>https://maps.google.co.jp/maps?q=35.700391,139.412645&amp;num=1&amp;t=h&amp;hl=ja&amp;brcurrent=3,0x6018e170f3e20ce3:0x8e66f9462890bdbb,0&amp;ie=UTF8&amp;ll=35.7004,139.412659&amp;spn=0.000676,0.001029&amp;z=14&amp;output=embed</map>
+  <ref>http://animelocations.iza-yoi.net/railgun-tachikawa.html#04</ref>
+  <photo>https://farm4.staticflickr.com/3937/15688486712_f78fbe5d02.jpg</photo>
+  <message>立川北駅から北方向を見たところ。モノレールがあると未来感があります。</message>
+</member>
+
+
+<member>
+  <place>立川第二法務総合庁舎</place>
+  <sv>https://maps.google.co.jp/maps?q=35.700391,139.412645&amp;num=1&amp;t=h&amp;hl=ja&amp;brcurrent=3,0x6018e1a050c80947:0x8ce644399cf70c68,0&amp;ie=UTF8&amp;ll=35.7004,139.412659&amp;spn=0.002518,0.004115&amp;z=14&amp;layer=c&amp;cbll=35.707552,139.41265&amp;panoid=eWeFH6louYf_dAPhA3_lvQ&amp;cbp=12,314.47,,0,-18.54&amp;source=embed&amp;output=svembed</sv>
+  <map>https://maps.google.co.jp/maps?q=35.707935,139.411989&amp;num=1&amp;t=h&amp;hl=ja&amp;brcurrent=3,0x6018e1a050c80947:0x8ce644399cf70c68,0&amp;ie=UTF8&amp;ll=35.707551,139.41265&amp;spn=0.001259,0.002057&amp;z=14&amp;output=embed</map>
+  <ref>http://animelocations.iza-yoi.net/railgun-tachikawa.html#05</ref>
+  <photo>https://lh5.googleusercontent.com/-zY1FhHp3umY/UhpbeDuGuJI/AAAAAAAACX0/S-PovMVxNPA/s400/DSCF0408.JPG</photo>
+  <message>法務総合庁舎です。IKEAが立つ前はアニメと同じアングルで写真を撮れたと思いますが、、、</message>
+</member>
+
+
+<member>
+  <place>立川北駅前交差点</place>
+  <sv>https://maps.google.co.jp/maps?q=35.707935,139.411989&amp;num=1&amp;t=h&amp;hl=ja&amp;brcurrent=3,0x6018e17707a98bf9:0xc52180e5b3101954,0&amp;ie=UTF8&amp;ll=35.707551,139.41265&amp;spn=0.002518,0.004115&amp;z=14&amp;layer=c&amp;cbll=35.700068,139.411997&amp;panoid=DnrusTd1qtPQnkDc__dIEg&amp;cbp=12,315.63,,1,-2.05&amp;source=embed&amp;output=svembed</sv>
+  <map>https://maps.google.co.jp/maps?q=35.700155,139.411784&amp;num=1&amp;t=h&amp;hl=ja&amp;brcurrent=3,0x6018e170b1234e09:0x414ae96ce8737199,0&amp;ie=UTF8&amp;ll=35.700165,139.411858&amp;spn=0.000315,0.000514&amp;z=14&amp;output=embed</map>
+  <ref>http://animelocations.iza-yoi.net/railgun-tachikawa.html#06</ref>
+  <photo>https://lh3.googleusercontent.com/-LybPINLm9P8/UhpMOYW71lI/AAAAAAAACT4/zCsLHVVhp-o/s400/DSCF0377.JPG</photo>
+  <message>近未来的なデザインの歩道橋</message>
+</member>
+
+
+<member>
+  <place>立川北駅前交差点２</place>
+  <sv>https://maps.google.co.jp/maps?q=35.700155,139.411784&amp;num=1&amp;t=h&amp;hl=ja&amp;brcurrent=3,0x6018e17736e5a9f5:0xee4707fa5d76b006,0&amp;ie=UTF8&amp;ll=35.700165,139.411858&amp;spn=0.000629,0.001029&amp;z=14&amp;layer=c&amp;cbll=35.70009,139.411072&amp;panoid=WCaYnInTIO4cb1AgRKalMg&amp;cbp=12,87.02,,1,-2.9&amp;source=embed&amp;output=svembed</sv>
+  <map>https://maps.google.co.jp/maps?q=35.700155,139.411784&amp;num=1&amp;t=h&amp;hl=ja&amp;brcurrent=3,0x6018e170b1234e09:0x414ae96ce8737199,0&amp;ie=UTF8&amp;ll=35.700165,139.411858&amp;spn=0.000315,0.000514&amp;z=14&amp;output=embed</map>
+  <ref>http://animelocations.iza-yoi.net/railgun-tachikawa.html#07</ref>
+  <photo>https://lh3.googleusercontent.com/-eKDvhUf_1Vs/UhpOHYBjYaI/AAAAAAAACUY/xlvr9uCb_DQ/s400/DSCF0381.JPG</photo>
+  <message>歩道橋を別角度から見たところ</message>
+</member>
+
+
+<member>
+  <place>伊勢丹と高島屋の間の道路</place>
+  <sv>https://maps.google.co.jp/maps?q=35.700155,139.411784&amp;num=1&amp;t=h&amp;hl=ja&amp;brcurrent=3,0x6018e1700db5cc15:0x8b4bf05b24e541de,0&amp;ie=UTF8&amp;ll=35.700165,139.411858&amp;spn=0.002535,0.004115&amp;z=14&amp;layer=c&amp;cbll=35.700285,139.413624&amp;panoid=AlSatrOKWiHw3YGMtzZGSg&amp;cbp=12,265.55,,0,1.76&amp;source=embed&amp;output=svembed</sv>
+  <map>https://maps.google.co.jp/maps?q=35.700283,139.413586&amp;num=1&amp;t=h&amp;hl=ja&amp;brcurrent=3,0x6018e1706969431f:0x70f16dbd81976206,0&amp;ie=UTF8&amp;ll=35.700285,139.413624&amp;spn=0.000315,0.000514&amp;z=14&amp;output=embed</map>
+  <ref>http://animelocations.iza-yoi.net/railgun-tachikawa.html#08</ref>
+  <photo>https://lh6.googleusercontent.com/-lhIZGo7TD_Q/UjplOZAKHFI/AAAAAAAADws/2dDmS2GEhno/s400/R-DSCF1045.JPG</photo>
+  <message>奥に見えるのはモノレールと歩道橋</message>
+</member>
+
+
+<member>
+  <place>パレスホテル立川　南側</place>
+  <sv>https://maps.google.co.jp/maps?q=35.700283,139.413586&amp;num=1&amp;t=h&amp;hl=ja&amp;brcurrent=3,0x6018e1700db5cc15:0x8b4bf05b24e541de,0&amp;ie=UTF8&amp;ll=35.700285,139.413624&amp;spn=0.001259,0.002057&amp;z=14&amp;layer=c&amp;cbll=35.701418,139.413739&amp;panoid=PpJDWxWa2FI8A7iReCODqA&amp;cbp=12,270.17,,1,1.35&amp;source=embed&amp;output=svembed</sv>
+  <map>https://maps.google.co.jp/maps?q=35.701426,139.413288&amp;num=1&amp;t=h&amp;hl=ja&amp;brcurrent=3,0x6018e170fdf7f5bf:0xc924272cee090395,0,0x6018e170fdeec165:0xc4cac88d497de228&amp;ie=UTF8&amp;ll=35.701409,139.413399&amp;spn=0.000629,0.001029&amp;z=14&amp;output=embed</map>
+  <ref>http://animelocations.iza-yoi.net/railgun-tachikawa.html#09</ref>
+  <photo>https://lh5.googleusercontent.com/-IjasqUPm2Hk/UjpmDqQQwbI/AAAAAAAADx8/uZ0Vgbz_Lg8/s400/R-DSCF1052.JPG</photo>
+  <message>光る階段が印象的</message>
+</member>
+
+
+<member>
+  <place>立川駅北側</place>
+  <sv>https://maps.google.co.jp/maps?q=35.701426,139.413288&amp;num=1&amp;t=h&amp;hl=ja&amp;brcurrent=3,0x6018e1700db5cc15:0x8b4bf05b24e541de,0&amp;ie=UTF8&amp;ll=35.701409,139.413399&amp;spn=0.002518,0.004115&amp;z=14&amp;layer=c&amp;cbll=35.698984,139.413853&amp;panoid=S9Fyr0Ga5IpNwQ9gjLfsfQ&amp;cbp=12,205.73,,0,-6.82&amp;source=embed&amp;output=svembed</sv>
+  <map>https://maps.google.co.jp/maps?q=35.699046,139.413809&amp;num=1&amp;t=h&amp;hl=ja&amp;brcurrent=3,0x6018e17a865aa52f:0xc90ff840f963705c,0,0x6018e17a86e8f7c5:0x563b546c99f2c2a5&amp;ie=UTF8&amp;ll=35.698948,139.413911&amp;spn=0.000315,0.000514&amp;z=14&amp;output=embed</map>
+  <ref>http://animelocations.iza-yoi.net/railgun-tachikawa.html#10</ref>
+  <photo>https://lh4.googleusercontent.com/-QEMsuG7CIKg/UjpmsghfkJI/AAAAAAAADzI/0cXuP4l-RcI/s400/R-DSCF1060.JPG</photo>
+</member>
+
+
+<member>
+  <place>立川駅南口側パチンコ店</place>
+  <sv>https://maps.google.co.jp/maps?q=35.699046,139.413809&amp;num=1&amp;t=h&amp;hl=ja&amp;brcurrent=3,0x6018e17ba22deeef:0x73f3d9f877b38baa,0&amp;ie=UTF8&amp;ll=35.698948,139.413911&amp;spn=0.001259,0.002057&amp;z=14&amp;layer=c&amp;cbll=35.69695,139.413514&amp;panoid=-0c_xPyOjJoLqwe6C-Z06A&amp;cbp=12,175.36,,0,-4.46&amp;source=embed&amp;output=svembed</sv>
+  <map>https://maps.google.co.jp/maps?q=35.696949,139.413516&amp;num=1&amp;t=h&amp;hl=ja&amp;brcurrent=3,0x6018e17b08474005:0x8fff0d442db8d12d,0,0x6018e17ba22deeef:0x73f3d9f877b38baa&amp;ie=UTF8&amp;ll=35.69695,139.413515&amp;spn=0.00063,0.001029&amp;z=14&amp;output=embed</map>
+  <ref>http://animelocations.iza-yoi.net/railgun-tachikawa.html#11</ref>
+  <photo>https://lh6.googleusercontent.com/-SVqBNjlCT9Y/UjpmopRtmRI/AAAAAAAADy8/4q2ne1axRL4/s400/R-DSCF1071-crop.jpg</photo>
+  <message>こちらは駅の南側。写真は左右反転して使用されています。</message>
+</member>
+
+
+<member>
+  <place>モスバーガー 立川南口店</place>
+  <sv>https://maps.google.co.jp/maps?q=35.696949,139.413516&amp;num=1&amp;t=h&amp;hl=ja&amp;brcurrent=3,0x6018e17bf54827ff:0x249c5ec8910a1f4c,0&amp;ie=UTF8&amp;ll=35.69695,139.413515&amp;spn=0.002518,0.004115&amp;z=14&amp;layer=c&amp;cbll=35.69622,139.415355&amp;panoid=hUWeiqltX0FvC4RnqUYtIQ&amp;cbp=12,26.01,,1,0&amp;source=embed&amp;output=svembed</sv>
+  <map>https://maps.google.co.jp/maps?q=35.696338,139.415414&amp;num=1&amp;t=h&amp;hl=ja&amp;brcurrent=3,0x6018e17ca0e4575d:0x9e1c949ff25cbcad,0&amp;ie=UTF8&amp;ll=35.69622,139.415355&amp;spn=0.000315,0.000514&amp;z=14&amp;output=embed</map>
+  <ref>http://animelocations.iza-yoi.net/railgun-tachikawa.html#12</ref>
+  <photo>https://lh3.googleusercontent.com/-4g0gfFKU3GM/Ujpm_2296LI/AAAAAAAADzs/b4rC95X6Lys/s400/R-DSCF1072.JPG</photo>
+  <message>美琴がチンピラに絡まれていて、トーマが（チンピラを）助けようとするシーンに登場。実際にはほぼ24時間営業なので、この場所でこのような展開は考えにくいですが、</message>
+</member>
+
+
+<member>
+  <place>多摩センター駅前のジョナサン</place>
+  <sv>https://maps.google.co.jp/maps?f=q&amp;source=embed&amp;hl=ja&amp;geocode=&amp;q=%E5%A4%9A%E6%91%A9%E3%82%BB%E3%83%B3%E3%82%BF%E3%83%BC%E9%A7%85&amp;aq=&amp;sll=32.999896,138.424012&amp;sspn=46.998062,86.396484&amp;brcurrent=3,0x6018e333e7dffdbf:0xbfa12ae77fad97be,0&amp;ie=UTF8&amp;hq=&amp;hnear=&amp;ll=35.624977,139.424737&amp;spn=0.006295,0.006295&amp;t=m&amp;layer=c&amp;cbll=35.624546,139.423016&amp;panoid=Z-vqoFEEiw3vZKC1rNRbdg&amp;cbp=12,294.12,,0,-1.46&amp;output=svembed</sv>
+  <map>https://maps.google.co.jp/maps?q=35.624549,139.4226&amp;num=1&amp;hl=ja&amp;brcurrent=3,0x6018e334f3f69a93:0x1406341d5d032931,0&amp;ie=UTF8&amp;ll=35.624336,139.422823&amp;spn=0.001415,0.002637&amp;t=m&amp;z=14&amp;output=embed</map>
+  <ref>http://animelocations.iza-yoi.net/railgun-tamacenter.html#01</ref>
+  <photo>https://lh4.googleusercontent.com/-yJZtoJ-PY0g/UjpZutEvq9I/AAAAAAAADdo/rSj4gzsQ9Aw/s400/R-DSCF0904.JPG</photo>
+  <message>立川駅前にあるジョナサン。以前は別のレストランだったそうです。</message>
+</member>
+
+
+<member>
+  <place>朝日生命ビル</place>
+  <sv>https://maps.google.co.jp/maps?f=q&amp;source=embed&amp;hl=ja&amp;geocode=&amp;q=%E5%A4%9A%E6%91%A9%E3%82%BB%E3%83%B3%E3%82%BF%E3%83%BC%E9%A7%85&amp;aq=&amp;sll=35.705342,139.577425&amp;sspn=0.001361,0.00181&amp;brcurrent=3,0x6018e334e32bdb95:0x7907fd4c0cbdfcfa,0,0x6018e34a89aba545:0x4f9c6fed76655bdb&amp;ie=UTF8&amp;hq=&amp;hnear=&amp;ll=35.624977,139.424737&amp;spn=0.006295,0.006295&amp;t=m&amp;layer=c&amp;cbll=35.623033,139.422497&amp;panoid=c1562OG5ucXALIMLFrjDyA&amp;cbp=12,255.07,,0,-8.13&amp;output=svembed</sv>
+  <map>https://maps.google.co.jp/maps?q=35.622877,139.422133&amp;num=1&amp;hl=ja&amp;brcurrent=3,0x6018e3346e5a9095:0xd8e316c6cb6525ff,0&amp;ie=UTF8&amp;ll=35.622958,139.422045&amp;spn=0.001354,0.00181&amp;t=m&amp;z=14&amp;output=embed</map>
+  <ref>http://animelocations.iza-yoi.net/railgun-tamacenter.html#02</ref>
+  <photo>https://lh3.googleusercontent.com/-fO5wsdoElMY/UjpaMiumvcI/AAAAAAAADes/30Jtq8yN5-Q/s400/R-DSCF0916.JPG</photo>
+  <message>朝日生命ビルです。何度か登場します。</message>
+</member>
+
+
+<member>
+  <place>ゆうゆう橋</place>
+  <sv>https://maps.google.co.jp/maps?q=35.622877,139.422133&amp;num=1&amp;hl=ja&amp;brcurrent=3,0x6018e3346e5a9095:0xd8e316c6cb6525ff,0&amp;ie=UTF8&amp;ll=35.622958,139.422045&amp;spn=0.001354,0.00181&amp;t=m&amp;z=14&amp;layer=c&amp;cbll=35.622865,139.422457&amp;panoid=IgE4pdsxwYQke626tyacIg&amp;cbp=12,168.89,,0,-6.8&amp;source=embed&amp;output=svembed</sv>
+  <map>https://maps.google.co.jp/maps?q=35.622822,139.422439&amp;num=1&amp;hl=ja&amp;brcurrent=3,0x6018e334e32bdb95:0x7907fd4c0cbdfcfa,0,0x6018e34a89aba545:0x4f9c6fed76655bdb&amp;ie=UTF8&amp;ll=35.622865,139.422457&amp;spn=0.001354,0.00181&amp;t=m&amp;z=14&amp;output=embed</map>
+  <ref>http://animelocations.iza-yoi.net/railgun-tamacenter.html#03</ref>
+  <photo>https://lh6.googleusercontent.com/-9EC-94-5oyA/Ujpa9Lb70VI/AAAAAAAADgE/Q_ITGjZiJQc/s400/R-DSCF0920.JPG</photo>
+  <message>背後に見える橋がゆうゆう橋です。この橋の上からの景色も（ストリートビューがありませんが）何度か登場します。</message>
+</member>
+
+
+<member>
+  <place>富士多摩ビル横の階段</place>
+  <sv>https://maps.google.co.jp/maps?q=35.622822,139.422439&amp;num=1&amp;hl=ja&amp;brcurrent=3,0x6018e333e7dffdbf:0xbfa12ae77fad97be,0&amp;ie=UTF8&amp;ll=35.622865,139.422457&amp;spn=0.002708,0.003621&amp;t=m&amp;z=14&amp;layer=c&amp;cbll=35.621814,139.419757&amp;panoid=QXS0lep5Q5sTjmnkOuWbVg&amp;cbp=12,349.04,,2,-8.3&amp;source=embed&amp;output=svembed</sv>
+  <map>https://maps.google.co.jp/maps?q=35.622027,139.419685&amp;num=1&amp;hl=ja&amp;brcurrent=3,0x6018fcccec084667:0xd54609c08f084b9b,0&amp;ie=UTF8&amp;ll=35.621814,139.419757&amp;spn=0.001354,0.00181&amp;t=m&amp;z=14&amp;output=embed</map>
+  <ref>http://animelocations.iza-yoi.net/railgun-tamacenter.html#04</ref>
+  <photo>https://lh4.googleusercontent.com/-b_dryTkaTF0/Ujpdkj0TPQI/AAAAAAAADkM/rQX5IbUIgeM/s400/R-DSCF0954.JPG</photo>
+  <message>富士多摩ビル横の階段です。何度も登場します。</message>
+</member>
+
+
+<member>
+  <place>多摩センター駅</place>
+  <sv>https://maps.google.co.jp/maps?q=35.622027,139.419685&amp;num=1&amp;hl=ja&amp;brcurrent=3,0x6018e34a89aba545:0x4f9c6fed76655bdb,0&amp;ie=UTF8&amp;ll=35.621814,139.419757&amp;spn=0.002708,0.003621&amp;t=m&amp;z=14&amp;layer=c&amp;cbll=35.623669,139.42514&amp;panoid=4qsfoM_x6XUAAAQfCVeUJw&amp;cbp=12,341.37,,1,3.47&amp;source=embed&amp;output=svembed</sv>
+  <map>https://maps.google.co.jp/maps?q=35.623749,139.425&amp;num=1&amp;hl=ja&amp;brcurrent=3,0x6018e335b1d144d3:0x16f891982e00b954,0,0x6018e335a43bcf87:0x2415c212524f581b&amp;ie=UTF8&amp;ll=35.623723,139.425248&amp;spn=0.002708,0.003621&amp;t=m&amp;z=14&amp;output=embed</map>
+  <ref>http://animelocations.iza-yoi.net/railgun-tamacenter.html#05</ref>
+  <photo>https://lh5.googleusercontent.com/-dGVZ4RMsrCc/UjpkVgQQamI/AAAAAAAADvE/CX8vNg_gf3I/s400/R-DSCF1012.JPG</photo>
+  <message>多摩センター駅を正面からみたところです。</message>
+</member>
+
+
+<member>
+  <place>陸橋から</place>
+  <sv>https://maps.google.co.jp/maps?q=35.623749,139.425&amp;num=1&amp;hl=ja&amp;brcurrent=3,0x6018e335b1d144d3:0x16f891982e00b954,0,0x6018e335a43bcf87:0x2415c212524f581b&amp;ie=UTF8&amp;ll=35.623723,139.425248&amp;spn=0.002708,0.003621&amp;t=m&amp;z=14&amp;layer=c&amp;cbll=35.623925,139.424863&amp;panoid=c84m8PHFM_6WmDzEASIsRg&amp;cbp=12,244.19,,0,-12.8&amp;source=embed&amp;output=svembed</sv>
+  <map>https://maps.google.co.jp/maps?q=35.623924,139.424783&amp;num=1&amp;hl=ja&amp;brcurrent=3,0x6018e335b1d144d3:0x16f891982e00b954,0,0x6018e335a43bcf87:0x2415c212524f581b&amp;ie=UTF8&amp;ll=35.623925,139.424863&amp;spn=0.001354,0.00181&amp;t=m&amp;z=14&amp;output=embed</map>
+  <ref>http://animelocations.iza-yoi.net/railgun-tamacenter.html#06</ref>
+  <photo>https://lh6.googleusercontent.com/-HwcL5gS-Rf4/UjpkVPhPb2I/AAAAAAAADvA/IwE9NeEfneU/s400/R-DSCF1017.JPG</photo>
+  <message>多摩センター駅正面の陸橋から南西を眺めた風景です。</message>
+</member>
+
+
+<member>
+  <place>多摩モノレール終点</place>
+  <sv>https://maps.google.co.jp/maps?q=35.622842,139.422484&amp;num=1&amp;hl=ja&amp;brcurrent=3,0x6018e334e32bdb95:0x7907fd4c0cbdfcfa,0,0x6018e34a89aba545:0x4f9c6fed76655bdb&amp;ie=UTF8&amp;ll=35.62313,139.423027&amp;spn=0.002708,0.003621&amp;t=m&amp;z=14&amp;layer=c&amp;cbll=35.622945,139.422476&amp;panoid=I_NhVrJhZK9yjfUZ9rjmFQ&amp;cbp=12,34.14,,0,-16.4&amp;source=embed&amp;output=svembed</sv>
+  <map>https://maps.google.co.jp/maps?q=35.622842,139.422484&amp;num=1&amp;hl=ja&amp;brcurrent=3,0x6018e334e32bdb95:0x7907fd4c0cbdfcfa,0,0x6018e34a89aba545:0x4f9c6fed76655bdb&amp;ie=UTF8&amp;t=m&amp;z=14&amp;ll=35.62313,139.423027&amp;output=embed</map>
+  <ref>http://animelocations.iza-yoi.net/railgun-tamacenter.html#07</ref>
+  <photo>https://lh4.googleusercontent.com/-XdS8xzJGrwU/Ujpkn7KyCrI/AAAAAAAADvY/yBeEEVOJ38s/s400/R-DSCF1018.JPG</photo>
+  <message>多摩モノレールのレールが終わる場所です。奥に見えるのはモノレールの駅です。</message>
+</member>
+
+
+<member>
+  <place>吉祥寺　東急百貨店スタバ</place>
+  <sv>https://maps.google.co.jp/maps?f=q&amp;source=embed&amp;hl=ja&amp;geocode=&amp;q=%E5%90%89%E7%A5%A5%E5%AF%BA%E9%A7%85&amp;aq=&amp;sll=35.622947,139.422475&amp;sspn=0.002725,0.003621&amp;g=35.622842,139.422484&amp;brcurrent=3,0x6018ee492a81aa0f:0x87c6a3d69964fc99,0&amp;ie=UTF8&amp;hq=&amp;hnear=&amp;ll=35.702811,139.579804&amp;spn=0.006295,0.006295&amp;t=m&amp;layer=c&amp;cbll=35.705264,139.577382&amp;panoid=7Zp5R05mc5EFb3mbyQ9ROw&amp;cbp=12,84.25,,1,-2.4&amp;output=svembed</sv>
+  <map>https://maps.google.co.jp/maps?q=35.705254,139.577468&amp;num=1&amp;hl=ja&amp;brcurrent=3,0x6018ee48c2459af3:0xc12e83f789e301dd,0,0x6018ee48c2e3e335:0x3677e8b5d346dfd&amp;ie=UTF8&amp;ll=35.705264,139.577382&amp;spn=0.001353,0.00181&amp;t=m&amp;z=14&amp;output=embed</map>
+  <ref>http://animelocations.iza-yoi.net/railgun-kichijouji.html#01</ref>
+  <photo>https://lh6.googleusercontent.com/-kWfI_M6U8wc/Uhph00X0MFI/AAAAAAAACZY/BOqwaYpAjAY/s400/DSCF0420.JPG</photo>
+  <message>Seventh Mistというお店の名前で登場する部分です。超電磁砲のOPや作中に登場します。元は、東急百貨店吉祥寺店１F裏側のスタバと思われます。</message>
+</member>
+
+
+<member>
+  <place>セブンスミスト向かいのレストラン</place>
+  <sv>https://maps.google.co.jp/maps?q=35.705254,139.577468&amp;num=1&amp;hl=ja&amp;brcurrent=3,0x6018ee48c2459af3:0xc12e83f789e301dd,0,0x6018ee48c2e3e335:0x3677e8b5d346dfd&amp;ie=UTF8&amp;ll=35.705264,139.577382&amp;spn=0.001353,0.00181&amp;t=m&amp;z=14&amp;layer=c&amp;cbll=35.705414,139.577465&amp;panoid=arRwHHl6BuCvcDxCzp-FmQ&amp;cbp=12,334.09,,0,-10.67&amp;source=embed&amp;output=svembed</sv>
+  <map>https://maps.google.co.jp/maps?q=35.705458,139.57739&amp;num=1&amp;hl=ja&amp;brcurrent=3,0x6018ee48c2e3e335:0x3677e8b5d346dfd,0&amp;ie=UTF8&amp;ll=35.705414,139.577465&amp;spn=0.001353,0.00181&amp;t=m&amp;z=14&amp;output=embed</map>
+  <ref>http://animelocations.iza-yoi.net/railgun-kichijouji.html#02</ref>
+  <photo>https://lh6.googleusercontent.com/-3jiJ-UjUM8o/UhpixEgrz0I/AAAAAAAACZo/En554xG9HOo/s400/DSCF0422.JPG</photo>
+  <message>セブンスミストに居るときの向かいのレストランです。</message>
+</member>
+
+
+
 
 
 

@@ -57,6 +57,9 @@ namespace urlCropper
             //現場写真URLを取得
             string urlPhoto = txtPhoto.Text;
 
+            //メッセージを取得
+            string mes = txtMessage.Text;
+
 
             // XMLの生成
 
@@ -67,17 +70,21 @@ namespace urlCropper
             xmlCode += "  <map>" + urlMap + "</map>\r\n";
             xmlCode += "  <ref>" + urlRef + "</ref>\r\n";
             xmlCode += "  <photo>" + urlPhoto + "</photo>\r\n";
+            xmlCode += "  <message>" + mes + "</message>\r\n";
             xmlCode += "</member>\r\n\r\n\r\n";
 
             txtXml.Text = xmlCode;
 
+            // 貼り付けコードをアクティブに
             txtXml.Select();
 
+            //テキストボックスをクリア
             txtPlace.Text = "";
             txtSv.Text = "";
             txtMap.Text = "";
             txtRef.Text = "";
             txtPhoto.Text = "";
+            txtMessage.Text = "";
         }
     }
 }

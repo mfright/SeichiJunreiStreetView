@@ -43,7 +43,6 @@ namespace SeichiJunreiStreetView
             setIcon();
 
             // ウィンドウタイトルに作品のタイトルを表示
-            labelTitle.Text = myProduct.title;
             Text = myProduct.title;
 
             
@@ -54,10 +53,11 @@ namespace SeichiJunreiStreetView
                 lstPlaces.Items.Add(myMember.place);
             }
 
-            lstPlaces.SelectedIndex = 0;
+            //lstPlaces.SelectedIndex = 0;
             
             //SV読み込み
-            refresh();
+            //最大化表示する場合は、そこでリサイズが発生しrefresh()が呼ばれるので不要
+            //refresh();
 
             //最大化表示
             this.WindowState = FormWindowState.Maximized;
@@ -70,6 +70,15 @@ namespace SeichiJunreiStreetView
 
             // Loading画像を表示
             setLoadingPicture();
+
+            /*
+            lblMessage.BackColor = Color.Transparent;
+            lblMessage.Parent = pictureBox1;
+            lblMessage.Location -= (Size)pictureBox1.Location;
+
+            pictureBox1.Image = getWhite();
+            pictureBox1.Parent = pic;
+            pictureBox1.Location -= (Size)pic.Location; */
         }
 
         private void setPicture()
@@ -87,7 +96,9 @@ namespace SeichiJunreiStreetView
 
             path += "\\settings\\loading.png";
 
-            pic_loading.Image = System.Drawing.Image.FromFile(path);
+            //pic_loading.Image = System.Drawing.Image.FromFile(path);
+            setOpacityImage(pic_loading, path);
+
             //pic_photoLoading.Image = System.Drawing.Image.FromFile(path);
             setOpacityImage(pic_photoLoading, path);
         }
@@ -135,13 +146,22 @@ namespace SeichiJunreiStreetView
 
         private void refresh()
         {
+            webSV.Width = lstPlaces.Location.X - 20;
+
             webSV.Height = webSV.Width / 2;
 
             pic_photoLoading.Visible = true;
             
             
             // 場所一覧表の当該箇所をアクティブにする
-            lstPlaces.SelectedIndex = pageNumber;
+            //この処理はなぜか例外を吐くことがあるのでtryで囲む
+            try{
+                lstPlaces.SelectedIndex = pageNumber;
+            }
+            catch (Exception ex)
+            {
+
+            }
 
             // 場所情報を取得する
             member myMember = (member)myProduct.members[pageNumber];
@@ -149,6 +169,8 @@ namespace SeichiJunreiStreetView
             navigator(webSV, webSV.Width, webSV.Height, myMember.sv);
 
             labelPlace.Text = myMember.place;
+
+            lblMessage.Text = myMember.message;
 
             loading = new loadingWindow();
             loading.Show();
@@ -319,8 +341,44 @@ namespace SeichiJunreiStreetView
 
             mapw.Show();
         }
+        /*
+        Bitmap getWhite()
+        {
+            //描画先とするImageオブジェクトを作成する
+            Bitmap canvas = new Bitmap(lblMessage.Width, lblMessage.Height);
+            //ImageオブジェクトのGraphicsオブジェクトを作成する
+            Graphics g = Graphics.FromImage(canvas);
 
-        
+            //画像を読み込む
+            Image img = Image.FromFile(getCurrentPath()+"\\settings\\white.png");
+
+            //ColorMatrixオブジェクトの作成
+            System.Drawing.Imaging.ColorMatrix cm =
+                new System.Drawing.Imaging.ColorMatrix();
+            //ColorMatrixの行列の値を変更して、アルファ値が0.5に変更されるようにする
+            cm.Matrix00 = 1;
+            cm.Matrix11 = 1;
+            cm.Matrix22 = 1;
+            cm.Matrix33 = 0.5F;
+            cm.Matrix44 = 1;
+
+            //ImageAttributesオブジェクトの作成
+            System.Drawing.Imaging.ImageAttributes ia =
+                new System.Drawing.Imaging.ImageAttributes();
+            //ColorMatrixを設定する
+            ia.SetColorMatrix(cm);
+
+            //ImageAttributesを使用して画像を描画
+            g.DrawImage(img, new Rectangle(0, 0, img.Width, img.Height),
+                0, 0, img.Width, img.Height, GraphicsUnit.Pixel, ia);
+
+            //リソースを解放する
+            img.Dispose();
+            g.Dispose();
+
+            return canvas;
+
+        }*/
         
     }
 }
