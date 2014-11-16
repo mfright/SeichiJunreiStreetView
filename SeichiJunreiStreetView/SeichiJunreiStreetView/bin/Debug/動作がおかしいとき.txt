@@ -1,4 +1,5 @@
 本ソフトウェアの動作には、Microsoft社の「.net Framework 4.5」以降およびFlash Player 15以降が必要です。
+これらのバージョンが古いと正常に動作しません。
 下記ウェブサイトから.net Framework 4.5以降およびFlash Player 15以降をダウンロード・インストールしてください。
 
 http://www.microsoft.com/ja-jp/download/details.aspx?id=30653  (.net Frameworkダウンロードページ)
