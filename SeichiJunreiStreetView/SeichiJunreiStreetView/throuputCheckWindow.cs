@@ -8,6 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+using System.Threading;
+using System.Net;
+using System.IO;
+using System.Text;
+
 namespace SeichiJunreiStreetView
 {
     public partial class throuputCheckWindow : Form
@@ -27,13 +32,45 @@ namespace SeichiJunreiStreetView
             setIcon();
 
             setHeadPic();
-            
+
+            // オンラインのリビジョンのダウンロード
+            Thread threadA = new Thread(new ThreadStart(loadRevision));
+            threadA.Start();
 
             //calculator.pngを読み込む
             string url = "http://slcp.sourceforge.jp/seichiJunrei/calculator.png?id="+generateRandom();
+            //string url = "https://maps.google.co.jp/maps?source=embed&amp;hl=ja&amp;ie=UTF8&amp;ll=35.571674,139.376636&amp;spn=0.011327,0.021093&amp;t=h&amp;z=16&amp;brcurrent=3,0x6018fd7cb5d648df:0x35324c2e09988f42,1&amp;layer=c&amp;cbll=35.571674,139.376636&amp;panoid=V_IAnyQ1TPhmvldJEbt_0w&amp;cbp=12,174.73,,0,0&amp;output=svembed" + "&gomi=" + generateRandom();
+            //string url = "http://slcp.sourceforge.jp/seichiJunrei/calculator2.bmp?id=" + generateRandom();
+
             webBrowserImage.Navigate(url);
 
             myTimer.Start();
+
+            
+        }
+
+        void loadRevision()
+        {
+            try
+            {
+                string url = "http://slcp.sourceforge.jp/seichiJunrei/repository.txt";
+
+                WebClient wc = new WebClient();
+                Stream st = wc.OpenRead(url);
+
+                StreamReader sr = new StreamReader(st,
+                                    Encoding.GetEncoding("Shift_JIS"));
+                //Console.WriteLine(sr.ReadToEnd());
+                string onVer = sr.ReadToEnd();
+                settings.onlineVersion = int.Parse(onVer);
+
+                sr.Close();
+                st.Close();
+            }
+            catch (Exception ex)
+            {
+
+            }
         }
 
         int generateRandom()
@@ -85,12 +122,15 @@ namespace SeichiJunreiStreetView
         {
             myTimer.Stop();
 
-            //label1.Text = handredMilliSecond + "　×100ミリ秒";
 
-            settings.resize_millisecond = handredMilliSecond * 90;
+            //settings.resize_millisecond = handredMilliSecond * 90;
+            settings.resize_millisecond = handredMilliSecond * 150 ;
 
-            MenuWindow menuWin = new MenuWindow();
-            menuWin.Show();
+            if (settings.menuWindow == null)
+            {
+                settings.menuWindow = new MenuWindow();
+                settings.menuWindow.Show();
+            }
 
             this.Visible = false;
         }

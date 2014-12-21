@@ -58,9 +58,10 @@
             // 
             // webBrowserImage
             // 
-            this.webBrowserImage.Location = new System.Drawing.Point(155, 185);
+            this.webBrowserImage.Location = new System.Drawing.Point(141, 121);
             this.webBrowserImage.MinimumSize = new System.Drawing.Size(20, 20);
             this.webBrowserImage.Name = "webBrowserImage";
+            this.webBrowserImage.ScriptErrorsSuppressed = true;
             this.webBrowserImage.Size = new System.Drawing.Size(142, 70);
             this.webBrowserImage.TabIndex = 2;
             this.webBrowserImage.DocumentCompleted += new System.Windows.Forms.WebBrowserDocumentCompletedEventHandler(this.webBrowserImage_DocumentCompleted);
@@ -85,9 +86,9 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(499, 299);
-            this.Controls.Add(this.lblSec);
             this.Controls.Add(this.lblMessage);
             this.Controls.Add(this.picLoading);
+            this.Controls.Add(this.lblSec);
             this.Controls.Add(this.webBrowserImage);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "throuputCheckWindow";

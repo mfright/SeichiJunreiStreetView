@@ -12,35 +12,38 @@ namespace SeichiJunreiStreetView
     {
         public static int resize_millisecond = 0;
 
+        public static MenuWindow menuWindow = null;
+
+        public static int onlineVersion = -1; // -1のとき、読み込み失敗
+        public static int localVersion = -1; // -1のとき、読み込み失敗
+
 
         public static void loadIni()
         {
-            // このバイナリが実行されているパスを取得する
-            string path = System.Windows.Forms.Application.ExecutablePath;
-            int yenPosition = path.LastIndexOf('\\');
-            path = path.Substring(0, yenPosition);
+            try
+            {
+                // このバイナリが実行されているパスを取得する
+                string path = System.Windows.Forms.Application.ExecutablePath;
+                int yenPosition = path.LastIndexOf('\\');
+                path = path.Substring(0, yenPosition);
 
-            path += "\\settings\\settings.ini";
+                path += "\\settings\\revision.ini";
 
-            StreamReader sr = new StreamReader(path, Encoding.GetEncoding("Shift_JIS"));
+                StreamReader sr = new StreamReader(path, Encoding.GetEncoding("Shift_JIS"));
 
-            string text = sr.ReadToEnd();
+                string text = sr.ReadToEnd();
 
-            sr.Close();
+                sr.Close();
 
-            // 設定を読み込む
+                // 設定を読み込む
 
-            /*
-            if(text.IndexOf("resize_second:") != -1){
-                int startPoint = text.IndexOf("resize_second:") + 14;
-                int endPoint = text.IndexOf("\r", startPoint);
+                localVersion = int.Parse(text);
 
-                string second = text.Substring(startPoint, endPoint - startPoint);
-                resize_second = int.Parse(second);
+            }
+            catch (Exception ex)
+            {
 
-            }*/
-
-            
+            }
         }
     }
 

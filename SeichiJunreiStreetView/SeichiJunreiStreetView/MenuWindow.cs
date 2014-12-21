@@ -39,6 +39,12 @@ namespace SeichiJunreiStreetView
 
             readXmls();
 
+            //もしオンラインにもっと最新版があれば、ダウンロードを促すボタンを表示
+            if (settings.onlineVersion != -1 && settings.onlineVersion > settings.localVersion)
+            {
+                btn_UpdateSite.Visible = true;
+            }
+
         }
 
         void setHeadPic()
@@ -349,10 +355,14 @@ namespace SeichiJunreiStreetView
         {
             // このバイナリが実行されているパスを取得する
             string path = getCurrentPath();
-            path += "\\settings\\animelocations.jpg";
+            string pathA = path + "\\settings\\animelocations.jpg";
+            string pathD = path + "\\settings\\ddhost.png";
 
-            btnAnimeLocations.BackgroundImage = System.Drawing.Image.FromFile(path);
+            btnAnimeLocations.BackgroundImage = System.Drawing.Image.FromFile(pathA);
             btnAnimeLocations.BackgroundImageLayout = ImageLayout.Center;
+
+            btnDDHOST.BackgroundImage = System.Drawing.Image.FromFile(pathD);
+            btnDDHOST.BackgroundImageLayout = ImageLayout.Center;
         }
 
         private void btnAnimeLocations_Click(object sender, EventArgs e)
@@ -363,6 +373,16 @@ namespace SeichiJunreiStreetView
         private void MenuWindow_FormClosed(object sender, FormClosedEventArgs e)
         {
             Application.Exit();
+        }
+
+        private void btn_UpdateSite_Click(object sender, EventArgs e)
+        {
+            Process.Start("http://animelocations.iza-yoi.net/sjsv.html");
+        }
+
+        private void btnDDHOST_Click(object sender, EventArgs e)
+        {
+            Process.Start("http://www.ddhost.jp");
         }
     }
 }

@@ -21,3 +21,6 @@ C:\Users\_\Documents\GitHub\SeichiJunreiStreetView\SeichiJunreiStreetView\Seichi
 C:\Users\_\Documents\GitHub\SeichiJunreiStreetView\SeichiJunreiStreetView\SeichiJunreiStreetView\obj\Debug\聖地巡礼SV.pdb
 C:\Users\_\Documents\GitHub\SeichiJunreiStreetView\SeichiJunreiStreetView\SeichiJunreiStreetView\obj\Debug\SeichiJunreiStreetView.throuputCheckWindow.resources
 C:\Users\_\Documents\GitHub\SeichiJunreiStreetView\SeichiJunreiStreetView\SeichiJunreiStreetView\obj\Debug\SeichiJunreiStreetView.mapWindow.resources
+C:\Users\_\Desktop\SeichiJunreiStreetView\SeichiJunreiStreetView\SeichiJunreiStreetView\bin\Debug\聖地巡礼SV.exe.config
+C:\Users\_\Desktop\SeichiJunreiStreetView\SeichiJunreiStreetView\SeichiJunreiStreetView\obj\Debug\聖地巡礼SV.exe
+C:\Users\_\Desktop\SeichiJunreiStreetView\SeichiJunreiStreetView\SeichiJunreiStreetView\obj\Debug\聖地巡礼SV.pdb

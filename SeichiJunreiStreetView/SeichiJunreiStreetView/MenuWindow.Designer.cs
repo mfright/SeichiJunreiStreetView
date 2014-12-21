@@ -30,6 +30,8 @@
         {
             this.picHead = new System.Windows.Forms.PictureBox();
             this.btnAnimeLocations = new System.Windows.Forms.Button();
+            this.btn_UpdateSite = new System.Windows.Forms.Button();
+            this.btnDDHOST = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.picHead)).BeginInit();
             this.SuspendLayout();
             // 
@@ -48,12 +50,34 @@
             // btnAnimeLocations
             // 
             this.btnAnimeLocations.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnAnimeLocations.Location = new System.Drawing.Point(1012, 12);
+            this.btnAnimeLocations.Location = new System.Drawing.Point(1007, 2);
             this.btnAnimeLocations.Name = "btnAnimeLocations";
-            this.btnAnimeLocations.Size = new System.Drawing.Size(200, 40);
+            this.btnAnimeLocations.Size = new System.Drawing.Size(205, 45);
             this.btnAnimeLocations.TabIndex = 2;
             this.btnAnimeLocations.UseVisualStyleBackColor = true;
             this.btnAnimeLocations.Click += new System.EventHandler(this.btnAnimeLocations_Click);
+            // 
+            // btn_UpdateSite
+            // 
+            this.btn_UpdateSite.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btn_UpdateSite.Location = new System.Drawing.Point(12, 12);
+            this.btn_UpdateSite.Name = "btn_UpdateSite";
+            this.btn_UpdateSite.Size = new System.Drawing.Size(168, 48);
+            this.btn_UpdateSite.TabIndex = 3;
+            this.btn_UpdateSite.Text = "より新しいバージョンがあります。ウェブサイトからダウンロード。";
+            this.btn_UpdateSite.UseVisualStyleBackColor = true;
+            this.btn_UpdateSite.Visible = false;
+            this.btn_UpdateSite.Click += new System.EventHandler(this.btn_UpdateSite_Click);
+            // 
+            // btnDDHOST
+            // 
+            this.btnDDHOST.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnDDHOST.Location = new System.Drawing.Point(1007, 56);
+            this.btnDDHOST.Name = "btnDDHOST";
+            this.btnDDHOST.Size = new System.Drawing.Size(205, 45);
+            this.btnDDHOST.TabIndex = 4;
+            this.btnDDHOST.UseVisualStyleBackColor = true;
+            this.btnDDHOST.Click += new System.EventHandler(this.btnDDHOST_Click);
             // 
             // MenuWindow
             // 
@@ -61,6 +85,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1224, 521);
+            this.Controls.Add(this.btnDDHOST);
+            this.Controls.Add(this.btn_UpdateSite);
             this.Controls.Add(this.btnAnimeLocations);
             this.Controls.Add(this.picHead);
             this.ForeColor = System.Drawing.SystemColors.ControlLight;
@@ -77,5 +103,7 @@
 
         private System.Windows.Forms.PictureBox picHead;
         private System.Windows.Forms.Button btnAnimeLocations;
+        private System.Windows.Forms.Button btn_UpdateSite;
+        private System.Windows.Forms.Button btnDDHOST;
     }
 }
