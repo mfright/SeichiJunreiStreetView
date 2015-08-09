@@ -12,7 +12,7 @@ $hei = $_POST['height'];
 $uri = $_POST['url'];
 
 
-echo '<frame src="https://'.$uri.'" name="ue">';
+echo '<frame src="http://'.$uri.'" name="ue">';
 
 
 ?>

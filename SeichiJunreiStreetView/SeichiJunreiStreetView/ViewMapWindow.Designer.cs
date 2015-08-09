@@ -60,7 +60,7 @@
             this.webSV.Name = "webSV";
             this.webSV.ScriptErrorsSuppressed = true;
             this.webSV.ScrollBarsEnabled = false;
-            this.webSV.Size = new System.Drawing.Size(570, 327);
+            this.webSV.Size = new System.Drawing.Size(570, 553);
             this.webSV.TabIndex = 0;
             this.webSV.Url = new System.Uri("", System.UriKind.Relative);
             this.webSV.WebBrowserShortcutsEnabled = false;
@@ -141,7 +141,7 @@
             // 
             // timerResizeSv
             // 
-            this.timerResizeSv.Interval = 6000;
+            this.timerResizeSv.Interval = 1;
             this.timerResizeSv.Tick += new System.EventHandler(this.timerReloadSv_Tick);
             // 
             // btnYugami

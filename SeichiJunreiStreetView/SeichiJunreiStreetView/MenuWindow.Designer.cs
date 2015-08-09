@@ -84,7 +84,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1224, 721);
+            this.ClientSize = new System.Drawing.Size(1224, 561);
             this.Controls.Add(this.btnDDHOST);
             this.Controls.Add(this.btn_UpdateSite);
             this.Controls.Add(this.btnAnimeLocations);

@@ -10,7 +10,7 @@ namespace SeichiJunreiStreetView
 {
     class settings
     {
-        public static int resize_millisecond = 0;
+        public static int resize_millisecond = 1;
 
         public static MenuWindow menuWindow = null;
 

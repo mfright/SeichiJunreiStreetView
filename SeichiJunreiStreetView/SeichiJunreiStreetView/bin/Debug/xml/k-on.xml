@@ -71,7 +71,7 @@
 
 <member>
   <place>百えんや</place>
-  <sv>https://maps.google.co.jp/maps?q=35.050127,135.79182&amp;num=1&amp;t=h&amp;hl=ja&amp;brcurrent=3,0x600109cb1fc26a81:0x85d51329b013f21a,0&amp;ie=UTF8&amp;ll=35.050057,135.791764&amp;spn=0.000341,0.000514&amp;z=14&amp;layer=c&amp;cbll=35.049997,135.791751&amp;panoid=l2Q0Kgr9Yqm2QecI-139yg&amp;cbp=12,14.16,,0,0&amp;source=embed&amp;output=svembed</sv>
+  <sv>https://www.google.com/maps/embed?pb=!1m0!3m2!1sja!2sjp!4v1439102446179!6m8!1m7!1sRL9yyff915mO_HxRyPrgsw!2m2!1d35.04992576229443!2d135.7918859549173!3f3.840300811365587!4f1.6429147226557745!5f0.7820865974627469</sv>
   <map>https://maps.google.co.jp/maps?q=35.050127,135.79182&amp;num=1&amp;t=h&amp;hl=ja&amp;brcurrent=3,0x600109cb1fc26a81:0x85d51329b013f21a,0&amp;ie=UTF8&amp;z=14&amp;ll=35.050057,135.791764&amp;output=embed</map>
   <ref>http://animelocations.iza-yoi.net/k-on-shugakuin.html#hyakuen</ref>
   <photo>http://lh3.ggpht.com/_xNOVSAFYU_U/TO8zaN-XUBI/AAAAAAAABSE/AfJnmnNhQ4k/s400/DSC05030.JPG</photo>
@@ -154,7 +154,7 @@
 
 <member>
   <place>通学路1</place>
-  <sv>https://maps.google.co.jp/maps?q=35.052161,135.786177&amp;num=1&amp;hl=ja&amp;brcurrent=3,0x60010831c6ab198b:0x2504494fc9d5496d,0&amp;ie=UTF8&amp;ll=35.052139,135.786226&amp;spn=0.001364,0.002057&amp;t=m&amp;z=14&amp;layer=c&amp;cbll=35.052078,135.784118&amp;panoid=NvgcWIarCtVO-Vm7cW5LVg&amp;cbp=12,92.82,,0,1.14&amp;source=embed&amp;output=svembed</sv>
+  <sv>https://www.google.com/maps/embed?pb=!1m0!3m2!1sja!2sjp!4v1439102614275!6m8!1m7!1s5Ad6_L1X0RtlOt4RKLjtBw!2m2!1d35.05207754265107!2d135.7841694418524!3f91.94234602895244!4f-5.022789677786051!5f0.7820865974627469</sv>
   <map>https://maps.google.co.jp/maps?q=35.052108,135.784119&amp;num=1&amp;t=h&amp;hl=ja&amp;brcurrent=3,0x60010831c6ab198b:0x2504494fc9d5496d,0&amp;ie=UTF8&amp;ll=35.052078,135.784118&amp;spn=0.001364,0.002057&amp;z=14&amp;output=embed</map>
   <ref>http://animelocations.iza-yoi.net/k-on-shugakuin.html#way</ref>
   <photo>http://lh4.ggpht.com/_xNOVSAFYU_U/TO8zHFiAqHI/AAAAAAAABQQ/FvTWXGOmXvQ/s400/DSC05003.JPG</photo>
@@ -194,7 +194,7 @@
 
 <member>
   <place>交差点</place>
-  <sv>https://maps.google.co.jp/maps?q=35.051217,135.789274&amp;num=1&amp;t=h&amp;hl=ja&amp;brcurrent=3,0x6001083404125593:0x5305cba69c09e942,0&amp;ie=UTF8&amp;ll=35.051221,135.789484&amp;spn=0.001364,0.002057&amp;z=14&amp;layer=c&amp;cbll=35.051135,135.789229&amp;panoid=mvGn0MfjOhroYP5Y3QJ1aw&amp;cbp=12,161.27,,1,4.17&amp;source=embed&amp;output=svembed</sv>
+  <sv>https://www.google.com/maps/embed?pb=!1m0!3m2!1sja!2sjp!4v1439102678819!6m8!1m7!1s24YkGhxPi1adrw2Yfr9w-Q!2m2!1d35.05113506441052!2d135.7892292055145!3f142.22648359748666!4f2.624387653009677!5f0.7820865974627469</sv>
   <map>https://maps.google.co.jp/maps?q=35.051217,135.789274&amp;num=1&amp;t=h&amp;hl=ja&amp;brcurrent=3,0x60010834ee7ea257:0x1777edfde6c33446,0&amp;ie=UTF8&amp;z=14&amp;ll=35.051221,135.789484&amp;output=embed</map>
   <ref>http://animelocations.iza-yoi.net/k-on-shugakuin.html#cross</ref>
   <photo>http://lh5.ggpht.com/_xNOVSAFYU_U/TO8zNkeXAGI/AAAAAAAABQ0/MUsBFHQUgVU/s400/DSC05012.JPG</photo>
@@ -364,11 +364,11 @@
 
 <member>
   <place>宇治駅</place>
-  <sv>https://maps.google.co.jp/maps?f=q&amp;source=embed&amp;hl=ja&amp;geocode=&amp;q=%E5%AE%87%E6%B2%BB%E9%A7%85&amp;aq=&amp;sll=34.926782,135.798752&amp;sspn=0.000683,0.001029&amp;t=h&amp;brcurrent=3,0x6001110893da89bd:0xde4c6984cd98e9c,0&amp;ie=UTF8&amp;hq=&amp;hnear=&amp;ll=34.890402,135.800612&amp;spn=0.006295,0.006295&amp;layer=c&amp;cbll=34.889735,135.800752&amp;panoid=bIMxV71JkakTBmupQ_gWDg&amp;cbp=12,350.13,,1,-0.47&amp;output=svembed</sv>
+  <sv>https://www.google.com/maps/embed?pb=!1m0!3m2!1sja!2sjp!4v1439102799754!6m8!1m7!1sV1A9-nrvhqPmgFIBZmuLFQ!2m2!1d34.88988502136947!2d135.8006808489511!3f1.7828607569826018!4f4.114426614707654!5f1.602050903606416</sv>
   <map>https://maps.google.co.jp/maps?q=34.890217,135.800765&amp;num=1&amp;t=h&amp;hl=ja&amp;brcurrent=3,0x60011109eec38cd5:0xce0c07b3329c7f43,0&amp;ie=UTF8&amp;ll=34.8902,135.800909&amp;spn=0.000683,0.001029&amp;z=14&amp;output=embed</map>
   <ref>http://animelocations.iza-yoi.net/k-on-uji.html</ref>
   <photo>http://lh6.ggpht.com/_xNOVSAFYU_U/TJNtttL0ccI/AAAAAAAAAfc/dreK4_Ji0jU/s400/DSC04544.JPG</photo>
-  <message>宇治の玄関口、JR宇治駅です。夜行バスで夏フェスに出かけるシーンで登場。余談ですが、自分は高校生の頃毎日この駅を利用して通学していました。</message>
+  <message>宇治の玄関口、JR宇治駅です。夜行バスで夏フェスに出かけるシーンで登場。余談ですが、自分は高校生の頃毎日この駅を利用して通学していました。響け！ユーフォニアムの舞台にもなりました。</message>
 </member>
 
 

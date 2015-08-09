@@ -18,7 +18,9 @@ namespace SeichiJunreiStreetView
     {
         product myProduct;
         int pageNumber = 0;
-        static string proxy = "http://slcp.sourceforge.jp/seichiJunrei/generator.php";
+        //static string proxy = "http://slcp.sourceforge.jp/seichiJunrei/generator.php";
+        static string proxy = "http://slcp.osdn.jp/seichiJunrei/generator.php";
+        static string proxy_nonssl = "http://slcp.osdn.jp/seichiJunrei/generator_nonssl.php";
 
         member nextMember;
 
@@ -63,7 +65,7 @@ namespace SeichiJunreiStreetView
             this.WindowState = FormWindowState.Maximized;
 
             //StreetViewのブラウザコンポーネントのリサイズの秒数を設定
-            timerResizeSv.Interval = settings.resize_millisecond;
+            //timerResizeSv.Interval = settings.resize_millisecond;
 
             //イラストを表示
             setPicture();
@@ -148,7 +150,7 @@ namespace SeichiJunreiStreetView
         {
             webSV.Width = lstPlaces.Location.X - 20;
 
-            webSV.Height = webSV.Width / 2;
+            //webSV.Height = webSV.Width / 2;
 
             pic_photoLoading.Visible = true;
             
@@ -177,8 +179,10 @@ namespace SeichiJunreiStreetView
 
             nextMember = myMember;
 
-            timerResizeSv.Stop();   //タイマーインターバル初期化
-            timerResizeSv.Start();
+            //timerResizeSv.Stop();   //タイマーインターバル初期化
+            //timerResizeSv.Start();
+            pic_photoLoading.Visible = false;
+            webPhoto.Navigate(nextMember.photo);
         }
 
         //指定した画像ファイルを半透明で指定のPictureBoxに表示する
@@ -222,9 +226,9 @@ namespace SeichiJunreiStreetView
 
         private void timerReloadSv_Tick(object sender, EventArgs e)
         {
-            timerResizeSv.Stop();
+            //timerResizeSv.Stop();
 
-            webSV.Height = webSV.Width;
+            //webSV.Height = webSV.Width;
 
             pic_photoLoading.Visible = false;
 
@@ -260,7 +264,14 @@ namespace SeichiJunreiStreetView
             byte[] postData = Encoding.ASCII.GetBytes(param1 + "&" + param2 + "&" + param3);
 
             //WebBrowserコントロールに表示
-            target.Navigate(proxy, null, postData,"Content-Type: application/x-www-form-urlencoded\r\n");
+            if (url.IndexOf("google") > 0)
+            {
+                target.Navigate(proxy, null, postData, "Content-Type: application/x-www-form-urlencoded\r\n");
+            }
+            else
+            {
+                target.Navigate(proxy_nonssl, null, postData, "Content-Type: application/x-www-form-urlencoded\r\n");
+            }
         }
 
 
@@ -332,7 +343,7 @@ namespace SeichiJunreiStreetView
 
             timerYugamiFix.Start();
 
-            timerResizeSv.Interval += 2000;
+            //timerResizeSv.Interval += 2000;
         }
 
         private void timerYugamiFix_Tick(object sender, EventArgs e)
