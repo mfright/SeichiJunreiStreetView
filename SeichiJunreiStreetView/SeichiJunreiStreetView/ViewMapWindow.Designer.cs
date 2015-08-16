@@ -37,8 +37,6 @@
             this.webPhoto = new System.Windows.Forms.WebBrowser();
             this.lstPlaces = new System.Windows.Forms.ListBox();
             this.timerResizeSv = new System.Windows.Forms.Timer(this.components);
-            this.btnYugami = new System.Windows.Forms.Button();
-            this.timerYugamiFix = new System.Windows.Forms.Timer(this.components);
             this.pic = new System.Windows.Forms.PictureBox();
             this.pic_loading = new System.Windows.Forms.PictureBox();
             this.btnCallMap = new System.Windows.Forms.Button();
@@ -144,22 +142,6 @@
             this.timerResizeSv.Interval = 1;
             this.timerResizeSv.Tick += new System.EventHandler(this.timerReloadSv_Tick);
             // 
-            // btnYugami
-            // 
-            this.btnYugami.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnYugami.Location = new System.Drawing.Point(460, 532);
-            this.btnYugami.Name = "btnYugami";
-            this.btnYugami.Size = new System.Drawing.Size(124, 55);
-            this.btnYugami.TabIndex = 12;
-            this.btnYugami.Text = "歪み修正再読込";
-            this.btnYugami.UseVisualStyleBackColor = true;
-            this.btnYugami.Click += new System.EventHandler(this.btnYugami_Click);
-            // 
-            // timerYugamiFix
-            // 
-            this.timerYugamiFix.Interval = 8000;
-            this.timerYugamiFix.Tick += new System.EventHandler(this.timerYugamiFix_Tick);
-            // 
             // pic
             // 
             this.pic.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
@@ -226,7 +208,6 @@
             this.Controls.Add(this.pic_photoLoading);
             this.Controls.Add(this.btnCallMap);
             this.Controls.Add(this.pic);
-            this.Controls.Add(this.btnYugami);
             this.Controls.Add(this.lstPlaces);
             this.Controls.Add(this.webPhoto);
             this.Controls.Add(this.labelPlace);
@@ -257,8 +238,6 @@
         private System.Windows.Forms.WebBrowser webPhoto;
         private System.Windows.Forms.ListBox lstPlaces;
         private System.Windows.Forms.Timer timerResizeSv;
-        private System.Windows.Forms.Button btnYugami;
-        private System.Windows.Forms.Timer timerYugamiFix;
         private System.Windows.Forms.PictureBox pic;
         private System.Windows.Forms.PictureBox pic_loading;
         private System.Windows.Forms.Button btnCallMap;

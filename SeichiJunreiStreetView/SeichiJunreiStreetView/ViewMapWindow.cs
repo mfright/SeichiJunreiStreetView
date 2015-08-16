@@ -327,42 +327,6 @@ namespace SeichiJunreiStreetView
             //*/
         }
 
-        private void btnYugami_Click(object sender, EventArgs e)
-        {
-            webSV.Height = webSV.Width / 2;
-
-            
-
-            // 場所情報を取得する
-            member myMember = (member)myProduct.members[pageNumber];
-            navigator(webSV, webSV.Width, webSV.Height, myMember.sv);
-
-
-            loading = new loadingWindow();
-            loading.Show();
-
-            timerYugamiFix.Start();
-
-            //timerResizeSv.Interval += 2000;
-        }
-
-        private void timerYugamiFix_Tick(object sender, EventArgs e)
-        {
-            webSV.Height = webSV.Width;
-
-            try
-            {
-                loading.Dispose();
-            }
-            catch
-            {
-
-            }
-
-            timerYugamiFix.Stop();
-        }
-
-
 
         //アイコンをセットする
         private void setIcon()

@@ -20,17 +20,18 @@ namespace urlCropper
         private void button1_Click(object sender, EventArgs e)
         {
             //場所名を取得
+            /*
             if (txtPlace.Text == "")
             {
                 return;
-            }
+            }*/
 
             string placeName = txtPlace.Text;
 
 
             // ストリートビューのURLを取得
             int start = txtSv.Text.IndexOf("http");
-            int end = txtSv.Text.IndexOf("\">");
+            int end = txtSv.Text.IndexOf("\"",start);
 
             if (start < 0 || end < 0)
             {
@@ -42,7 +43,7 @@ namespace urlCropper
 
             // 地図のURLを取得
             start = txtMap.Text.IndexOf("http");
-            end = txtMap.Text.IndexOf("\">");
+            end = txtMap.Text.IndexOf("\"",start);
 
             if (start < 0 || end < 0)
             {

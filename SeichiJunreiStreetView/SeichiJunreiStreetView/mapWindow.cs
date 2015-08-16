@@ -14,7 +14,7 @@ namespace SeichiJunreiStreetView
 {
     public partial class mapWindow : Form
     {
-        static string proxy = "http://slcp.sourceforge.jp/seichiJunrei/generator.php";
+        static string proxy = "https://slcp.osdn.jp/seichiJunrei/generator_map.php";
 
         string mapUrl = "";
 
