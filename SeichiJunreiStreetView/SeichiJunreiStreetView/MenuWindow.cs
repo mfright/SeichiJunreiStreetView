@@ -60,11 +60,24 @@ namespace SeichiJunreiStreetView
         }
 
         //座標と画像ファイル名を指定して、ボタンを作成。
-        private void createButton(string name,int x,int y,string fileName)
+        private void createButton(string name,int x,int y,int z,string fileName)
         {
+            // タブページが不足していたら、追加する
+            for (; true; )
+            {
+                if (tabControl.TabPages.Count < z + 1)
+                {
+                    tabControl.TabPages.Add("PAGE-" + (tabControl.TabPages.Count + 1));
+                }
+                else
+                {
+                    break;
+                }
+            }
+
             //Buttonクラスのインスタンスを作成する
             Button Button1 = new System.Windows.Forms.Button();
-
+            
             //Buttonコントロールのプロパティを設定する
             Button1.Name = name;
             Button1.Text = "";
@@ -83,8 +96,8 @@ namespace SeichiJunreiStreetView
             Button1.Click += new EventHandler(menuButton_Click);
 
             //フォームに追加する
-            this.Controls.Add(Button1);
-
+            //this.Controls.Add(Button1);
+            this.tabControl.TabPages[z].Controls.Add(Button1);
         }
 
         // メニューのボタンが押された時
@@ -133,10 +146,11 @@ namespace SeichiJunreiStreetView
                 //listProducts.Items.Add(myProduct.title);
 
 
-                int pointY = 110 + (k / 3) * 200;
-                int pointX = 10 + (k % 3) * 400;
+                int pointY = 0 + ((k % 6) / 3) * 200;   //X座標
+                int pointX = 0 + (k % 3) * 400;         //y座標
+                int pointZ = k / 6;                     //Tabインデックス
 
-                createButton(k + "", pointX, pointY, myProduct.buttonImageFileName);
+                createButton(k + "", pointX, pointY,pointZ, myProduct.buttonImageFileName);
             }
         }
 

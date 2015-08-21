@@ -34,6 +34,7 @@
             this.webBrowserImage = new System.Windows.Forms.WebBrowser();
             this.myTimer = new System.Windows.Forms.Timer(this.components);
             this.lblSec = new System.Windows.Forms.Label();
+            this.timerChangeInformation = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.picLoading)).BeginInit();
             this.SuspendLayout();
             // 
@@ -52,9 +53,9 @@
             this.lblMessage.Font = new System.Drawing.Font("MS UI Gothic", 15F);
             this.lblMessage.Location = new System.Drawing.Point(22, 89);
             this.lblMessage.Name = "lblMessage";
-            this.lblMessage.Size = new System.Drawing.Size(176, 20);
+            this.lblMessage.Size = new System.Drawing.Size(21, 20);
             this.lblMessage.TabIndex = 1;
-            this.lblMessage.Text = "通信速度を計測中...";
+            this.lblMessage.Text = "...";
             // 
             // webBrowserImage
             // 
@@ -81,6 +82,11 @@
             this.lblSec.TabIndex = 3;
             this.lblSec.Text = "00";
             // 
+            // timerChangeInformation
+            // 
+            this.timerChangeInformation.Interval = 300;
+            this.timerChangeInformation.Tick += new System.EventHandler(this.timerChangeInformation_Tick);
+            // 
             // throuputCheckWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -90,9 +96,9 @@
             this.Controls.Add(this.picLoading);
             this.Controls.Add(this.lblSec);
             this.Controls.Add(this.webBrowserImage);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "throuputCheckWindow";
-            this.Text = "通信速度を測定中";
+            this.Text = "SJSV";
             this.Load += new System.EventHandler(this.throuputCheckWindow_Load);
             ((System.ComponentModel.ISupportInitialize)(this.picLoading)).EndInit();
             this.ResumeLayout(false);
@@ -107,5 +113,6 @@
         private System.Windows.Forms.WebBrowser webBrowserImage;
         private System.Windows.Forms.Timer myTimer;
         private System.Windows.Forms.Label lblSec;
+        private System.Windows.Forms.Timer timerChangeInformation;
     }
 }

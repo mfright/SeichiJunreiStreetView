@@ -37,6 +37,7 @@ namespace SeichiJunreiStreetView
             Thread threadA = new Thread(new ThreadStart(loadRevision));
             threadA.Start();
 
+            /*
             //calculator.pngを読み込む
             string url = "http://slcp.sourceforge.jp/seichiJunrei/calculator.png?id="+generateRandom();
             //string url = "https://maps.google.co.jp/maps?source=embed&amp;hl=ja&amp;ie=UTF8&amp;ll=35.571674,139.376636&amp;spn=0.011327,0.021093&amp;t=h&amp;z=16&amp;brcurrent=3,0x6018fd7cb5d648df:0x35324c2e09988f42,1&amp;layer=c&amp;cbll=35.571674,139.376636&amp;panoid=V_IAnyQ1TPhmvldJEbt_0w&amp;cbp=12,174.73,,0,0&amp;output=svembed" + "&gomi=" + generateRandom();
@@ -45,7 +46,9 @@ namespace SeichiJunreiStreetView
             webBrowserImage.Navigate(url);
 
             myTimer.Start();
+            */
 
+            timerChangeInformation.Start();
             
         }
 
@@ -53,14 +56,22 @@ namespace SeichiJunreiStreetView
         {
             try
             {
-                string url = "http://slcp.sourceforge.jp/seichiJunrei/repository.txt";
+                //オンラインのバージョンが記されたURLを取得
+                
+                string path = getCurrentPath();
+                path += "\\settings\\onlinerevisionurl.ini";
+                
+                System.IO.StreamReader inisr = new System.IO.StreamReader(path,System.Text.Encoding.GetEncoding("shift_jis"));
+                string url = inisr.ReadToEnd();
+                inisr.Close();
+                
 
+                //オンラインのバージョン情報を取得
                 WebClient wc = new WebClient();
                 Stream st = wc.OpenRead(url);
 
                 StreamReader sr = new StreamReader(st,
                                     Encoding.GetEncoding("Shift_JIS"));
-                //Console.WriteLine(sr.ReadToEnd());
                 string onVer = sr.ReadToEnd();
                 settings.onlineVersion = int.Parse(onVer);
 
@@ -118,6 +129,7 @@ namespace SeichiJunreiStreetView
             lblSec.Text = handredMilliSecond+"";
         }
 
+        
         private void webBrowserImage_DocumentCompleted(object sender, WebBrowserDocumentCompletedEventArgs e)
         {
             myTimer.Stop();
@@ -133,6 +145,38 @@ namespace SeichiJunreiStreetView
             }
 
             this.Visible = false;
+        }
+
+
+        private void timerChangeInformation_Tick(object sender, EventArgs e)
+        {
+
+            if (lblMessage.Text.Equals("Initializing components..."))
+            {
+                lblMessage.Text = "Parsing xmls...";
+            }
+            else if (lblMessage.Text.Equals("Parsing xmls..."))
+            {
+                lblMessage.Text = "Loading images...";
+            }
+            else if (lblMessage.Text.Equals("Loading images..."))
+            {
+                lblMessage.Text = "Checking online version...";
+            }
+            else if (lblMessage.Text.Equals("Checking online version..."))
+            {
+                if (settings.menuWindow == null)
+            {
+                settings.menuWindow = new MenuWindow();
+                settings.menuWindow.Show();
+            }
+
+            this.Visible = false;
+            }
+            else
+            {
+                lblMessage.Text = "Initializing components...";
+            }
         }
     }
 }
