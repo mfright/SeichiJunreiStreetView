@@ -303,6 +303,13 @@ namespace SeichiJunreiStreetView
 
                 }
 
+                // noIframe属性を確認
+                if (strMember.IndexOf("<noiframe>true</noiframe>") > 0)
+                {
+                    // <noiframe>true</noiframe>　が含まれていれば、iframeで表示しない
+                    myMember.noIframe = true;
+                }
+
 
                 //myMemberをmyProductへ追加
                 myProduct.members.Add(myMember);

@@ -18,7 +18,6 @@ namespace SeichiJunreiStreetView
     {
         product myProduct;
         int pageNumber = 0;
-        //static string proxy = "http://slcp.sourceforge.jp/seichiJunrei/generator.php";
         static string proxy = "http://slcp.osdn.jp/seichiJunrei/generator.php";
         static string proxy_nonssl = "http://slcp.osdn.jp/seichiJunrei/generator_nonssl.php";
 
@@ -71,7 +70,7 @@ namespace SeichiJunreiStreetView
             setPicture();
 
             // Loading画像を表示
-            setLoadingPicture();
+            //setLoadingPicture();
 
             /*
             lblMessage.BackColor = Color.Transparent;
@@ -91,7 +90,7 @@ namespace SeichiJunreiStreetView
 
             pic.Image = System.Drawing.Image.FromFile(path);
         }
-
+        /*
         private void setLoadingPicture()
         {
             string path = getCurrentPath();
@@ -103,7 +102,7 @@ namespace SeichiJunreiStreetView
 
             //pic_photoLoading.Image = System.Drawing.Image.FromFile(path);
             setOpacityImage(pic_photoLoading, path);
-        }
+        }*/
 
         // このバイナリが実行されているパスを取得する
         private string getCurrentPath()
@@ -152,7 +151,7 @@ namespace SeichiJunreiStreetView
 
             //webSV.Height = webSV.Width / 2;
 
-            pic_photoLoading.Visible = true;
+            //pic_photoLoading.Visible = true;
             
             
             // 場所一覧表の当該箇所をアクティブにする
@@ -168,7 +167,7 @@ namespace SeichiJunreiStreetView
             // 場所情報を取得する
             member myMember = (member)myProduct.members[pageNumber];
 
-            navigator(webSV, webSV.Width, webSV.Height, myMember.sv);
+            navigator(webSV, webSV.Width, webSV.Height, myMember.sv,myMember.noIframe);
 
             labelPlace.Text = myMember.place;
 
@@ -179,8 +178,6 @@ namespace SeichiJunreiStreetView
 
             nextMember = myMember;
 
-            //timerResizeSv.Stop();   //タイマーインターバル初期化
-            //timerResizeSv.Start();
             pic_photoLoading.Visible = false;
             webPhoto.Navigate(nextMember.photo);
         }
@@ -251,7 +248,7 @@ namespace SeichiJunreiStreetView
         /// <param name="width"></param>
         /// <param name="height"></param>
         /// <param name="url"></param>
-        private void navigator(WebBrowser target,int width,int height,string url)
+        private void navigator(WebBrowser target,int width,int height,string url,Boolean noiframe)
         {
             //target.Navigate(proxy);
 
@@ -263,8 +260,13 @@ namespace SeichiJunreiStreetView
             //パラメータをバイト配列に変換
             byte[] postData = Encoding.ASCII.GetBytes(param1 + "&" + param2 + "&" + param3);
 
+            
             //WebBrowserコントロールに表示
-            if (url.IndexOf("google") > 0)
+            if (noiframe)
+            {
+                target.Navigate(url);
+            }
+            else if (url.IndexOf("google") > 0)
             {
                 target.Navigate(proxy, null, postData, "Content-Type: application/x-www-form-urlencoded\r\n");
             }

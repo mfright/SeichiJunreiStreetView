@@ -17,6 +17,7 @@ namespace SeichiJunreiStreetView
         public string map = "";     //GoogleMapの埋め込みURL
         public string refpage = ""; //アニメ比較画像掲載URL
         public string message = "";  //ひとことメッセージ
+        public Boolean noIframe = false;    //iframeでの表示をせず、ストリートビューを直に表示するか
     }
 
 }
