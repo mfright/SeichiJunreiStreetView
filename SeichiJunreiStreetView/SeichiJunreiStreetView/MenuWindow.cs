@@ -388,7 +388,9 @@ namespace SeichiJunreiStreetView
 
         private void btnAnimeLocations_Click(object sender, EventArgs e)
         {
-            Process.Start("http://animelocations.iza-yoi.net");
+            //Process.Start("http://animelocations.iza-yoi.net");
+
+            ViewMapWindow.alexNavigate("http://animelocations.iza-yoi.net");
         }
 
         private void MenuWindow_FormClosed(object sender, FormClosedEventArgs e)
@@ -398,12 +400,16 @@ namespace SeichiJunreiStreetView
 
         private void btn_UpdateSite_Click(object sender, EventArgs e)
         {
-            Process.Start("http://animelocations.iza-yoi.net/sjsv.html");
+            //Process.Start("http://animelocations.iza-yoi.net/sjsv.html");
+
+            ViewMapWindow.alexNavigate("http://animelocations.iza-yoi.net/sjsv.html");
         }
 
         private void btnDDHOST_Click(object sender, EventArgs e)
         {
-            Process.Start("http://www.ddhost.jp");
+            //Process.Start("http://www.ddhost.jp");
+
+            ViewMapWindow.alexNavigate("http://www.ddhost.jp");
         }
     }
 }

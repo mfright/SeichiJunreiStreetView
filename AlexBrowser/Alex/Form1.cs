@@ -17,7 +17,7 @@ namespace DD_HOST_Explorer
         public bool fullscreen = false;
 
         //透過してるか
-        public bool opacity = false;
+        public bool opacity = true;
 
         //ホームページのＵＲＬ
         public string homeurl;
@@ -32,10 +32,7 @@ namespace DD_HOST_Explorer
         {
             InitializeComponent();
 
-            if (opacity == false)
-            {
-                this.Opacity = 0.9;  // 不透明度設定
-            }
+            
 
             //このバイナリのパスを取得
             string location = System.IO.Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location);
@@ -69,6 +66,8 @@ namespace DD_HOST_Explorer
             
             //ブラウザにホームを表示
             webBrowser1.Navigate(homeurl);
+
+            txtURL.Text = homeurl;
 
             //ブラウザにフォーカスを当てる
             webBrowser1.Focus();
@@ -186,7 +185,7 @@ namespace DD_HOST_Explorer
             toolStripStatusLabel1.Text = "Fin";
 
             //tabPage1.Text = webBrowser1.DocumentTitle;
-            this.Text = "Alex - " + webBrowser1.DocumentTitle;
+            this.Text = "Alex web browser- " + webBrowser1.DocumentTitle;
         }
 
         private void btnBack_Click(object sender, EventArgs e)
@@ -237,6 +236,11 @@ namespace DD_HOST_Explorer
             StreamWriter sw = new StreamWriter(location2, false, Encoding.Default);
             sw.WriteLine(homeurl);
             sw.Close();
+        }
+
+        private void manualToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            webBrowser1.Navigate("http://www.ddhost.jp/alex/");
         }
 
         /*
