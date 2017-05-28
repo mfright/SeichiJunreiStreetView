@@ -12,6 +12,11 @@ using System.IO;
 using System.Collections;         //追加
 using System.Web;
 using System.Diagnostics;
+using Microsoft.Win32;
+using System.Text.RegularExpressions;
+using System.Windows.Forms;
+
+
 
 namespace SeichiJunreiStreetView
 {
@@ -44,6 +49,36 @@ namespace SeichiJunreiStreetView
             {
                 btn_UpdateSite.Visible = true;
             }
+
+            editRegistry();
+
+        }
+
+        // webBrowserコンポーネントでIE11を使用するよう設定
+        void editRegistry()
+        {
+            string FBE = @"Software\Microsoft\Internet Explorer\Main\FeatureControl\FEATURE_BROWSER_EMULATION";
+            Microsoft.Win32.RegistryKey regkey = Microsoft.Win32.Registry.CurrentUser.CreateSubKey(FBE);
+            
+            string pname = System.Diagnostics.Process.GetCurrentProcess().ProcessName + ".exe";
+            string dname = System.Diagnostics.Process.GetCurrentProcess().ProcessName + ".vshost.exe";
+
+            regkey.SetValue(pname, 11001, Microsoft.Win32.RegistryValueKind.DWord);
+            regkey.SetValue(dname, 11001, Microsoft.Win32.RegistryValueKind.DWord);
+
+        }
+
+        // webBrowserコンポーネントでIE11を使用する設定を削除
+        void deleteRegistory()
+        {
+            string FBE = @"Software\Microsoft\Internet Explorer\Main\FeatureControl\FEATURE_BROWSER_EMULATION";
+            Microsoft.Win32.RegistryKey regkey = Microsoft.Win32.Registry.CurrentUser.CreateSubKey(FBE);
+
+            string pname = System.Diagnostics.Process.GetCurrentProcess().ProcessName + ".exe";
+            string dname = System.Diagnostics.Process.GetCurrentProcess().ProcessName + ".vshost.exe";
+
+            regkey.DeleteValue(pname);
+            regkey.DeleteValue(dname);
 
         }
 
@@ -395,6 +430,8 @@ namespace SeichiJunreiStreetView
 
         private void MenuWindow_FormClosed(object sender, FormClosedEventArgs e)
         {
+            deleteRegistory(); 
+
             Application.Exit();
         }
 
